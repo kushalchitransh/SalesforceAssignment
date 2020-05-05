@@ -1,0 +1,20 @@
+package com.salesforceAutomation.Salesforce;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        WebDriver driver;
+        System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver.exe");
+        driver=new ChromeDriver();
+        driver.get("https://login.salesforce.com/");
+        
+    }
+}

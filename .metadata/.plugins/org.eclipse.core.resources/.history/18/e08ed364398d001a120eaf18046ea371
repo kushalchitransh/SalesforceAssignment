@@ -1,0 +1,119 @@
+package com.salesforce.automation;
+
+import java.util.List;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.salesforce.automaton.Base;
+import com.salesforce.automaton.Constants;
+import com.salesforce.pages.LandingPage;
+import com.salesforce.pages.LoginPage;
+
+public class TestCase_Salesforce_CheckUI {
+	LoginPage   loginPage;
+	LandingPage landingPage;
+	String      className = TestCase_Salesforce_CheckUI.class.getName();
+
+	@BeforeClass
+	public void InitializePage() {
+		loginPage = new LoginPage();
+		landingPage = new LandingPage();
+		Base.getImplicitWait(20);
+	}
+
+	@BeforeMethod
+	public void initializeURL() {
+		Base.getLogger(className).info("Browser initialized......");
+		Base.openUrl(Constants.URL_SALESFORCELOGIN);
+		loginPage.setTxtUsername(Constants.INPUT_USERNAME);
+		loginPage.setTxtPassword(Constants.INPUT_PASSWORD);
+		loginPage.clickBtnLogin();
+		Base.getLogger(className).info("Logged In Successfully....");
+		Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+
+	}
+
+	@Test(enabled = true)
+	public void D_ValidateLandingPageIsLightening() {
+		Base.getLogger(className).info(
+		        "Test started --------------D_ValidateLandingPageIsLightening");
+		String url = Base.getCurrentBrowserURL();
+		Assert.assertTrue(url.contains(Constants.URL_SALESFORCELIGHTENING),
+		        "The loanding page is open in lightening mode");
+		Base.getLogger(className)
+		        .info("The page loaded in Salesforce landing page is in LighteningMode.");
+	}
+
+	@Test
+	public void E_ValidateSwitchToLightening() throws Exception {
+		Base.getLogger(className).info(
+		        "Test started --------------E_ValidateSwitchToLightening");
+		try {
+
+			landingPage.clickBtnViewProfile();
+			Base.getLogger(className).info("Clicked on View Profile Icon ");
+			WebDriverWait waitforElement = new WebDriverWait(
+			        Base.getDriverInstance(), 10);
+			waitforElement.until(
+			        ExpectedConditions.elementToBeClickable(landingPage
+			                .getLinkSwitchToClassic())).click();
+			Base.getLogger(className).info(
+			        "Clicked on 'Switch to Salesforce Classic'");
+			Assert.assertTrue(Base.getCurrentBrowserURL().contains(
+			        Constants.URL_SALESFORCESTANDARD));
+			Base.getLogger(className).info(
+			        "User has moved to Standard Mode of salesforce.");
+			landingPage.clickLinkSwitchToLightening();
+			Base.getLogger(className).info(
+			        "Clicked on 'Switch to lightening experience' link.");
+			if (!landingPage.getBtnViewProfile().isDisplayed()) {
+				if (loginPage.getLblSessionEnd().isDisplayed())
+					Base.performKeyboardActions(Base.getDriverInstance(),
+					        Keys.ENTER);
+			}
+			Assert.assertTrue(Base.getCurrentBrowserURL().contains(
+			        Constants.URL_SALESFORCELIGHTENING));
+			Base.getLogger(className).info(
+			        "User is navigated to landing page in lightening mode.");
+		} catch (Exception e) {
+			Base.getDriverInstance().navigate().refresh();
+
+		}
+	}
+
+	@Test
+	public void F_ValidateAppChange() {
+		Base.getLogger(className).info(
+		        "Test started --------------F_ValidateAppChange");
+		if (loginPage.getLblSessionEnd().isDisplayed())
+			Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+
+		Base.getWait(Base.getDriverInstance(), 20)
+		        .until(ExpectedConditions.elementToBeClickable(landingPage
+		                .getBtnAppLauncher())).click();
+		Base.getLogger(className).info("Clicked on app launcher Icon");
+
+		landingPage.setTxtSearchApp(Constants.INPUT_SEARCH_TEXT);
+
+		Base.getLogger(className).info("Entered text in search app text box");
+		List<WebElement> searchResults = landingPage.getListSearchResults();
+		for (WebElement iterator : searchResults) {
+			if (iterator.getText().equals(Constants.INPUT_SEARCH_TEXT)) {
+				iterator.click();
+			}
+		}
+	}
+
+	@AfterClass
+	public void closeBrowser() {
+		// Base.closeWindow();
+	}
+}

@@ -1,0 +1,92 @@
+package com.salesforce.automaton;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+
+	public static void main(String[] args) throws InterruptedException {
+		DOMConfigurator.configure("log4j-alternate.xml");
+		Logger logger = Logger.getLogger(App.class.getName());
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver",
+		        "src/resources/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		logger.info("Driver Initialized");
+		driver.get("https://login.salesforce.com/");
+
+		WebElement textBoxlogin = driver.findElement(By
+		        .xpath("//*[@id='username']"));
+		textBoxlogin.clear();
+		textBoxlogin.sendKeys("kushalchitransh@gmail.com");
+		WebElement textBoxPassword = driver.findElement(By
+		        .xpath("//*[@id='password']"));
+		textBoxPassword.clear();
+		textBoxPassword.sendKeys("Summer@2015");
+		WebElement buttonLogin = driver.findElement(By
+		        .xpath("//*[@id='Login']"));
+		buttonLogin.click();
+		// driver.findElement(
+		// By.xpath(".//*[@id='oneHeader']/div[2]/span/div[2]/ul/li[9]/span/button"))
+		// .click();
+		// Thread.sleep(20);
+		// driver.findElement(
+		// By.xpath(".//*[@href='/ltng/switcher?destination=classic&referrer=%2Flightning%2Fsetup%2FSetupOneHome%2Fhome']"))
+		// .click();
+
+		if (!driver.getCurrentUrl().contains("lightning")) {
+			WebDriverWait waitforlink = new WebDriverWait(driver, 10);
+			waitforlink.until(
+			        ExpectedConditions.elementToBeClickable(By
+			                .xpath(".//*[@class='switch-to-lightning']")))
+			        .click();
+			;
+		}
+		new WebDriverWait(driver, 20)
+		        .until(ExpectedConditions.elementToBeClickable(driver.findElement(By
+		                .xpath(".//*[@class='bBottom']//div[@class='tooltipTrigger tooltip-trigger uiTooltip']"))))
+		        .click();
+		new WebDriverWait(driver, 20).until(
+		        ExpectedConditions.elementToBeClickable(driver.findElement(By
+		                .xpath(".//*[@class='slds-input']")))).sendKeys(
+		        "Sales ");
+		;
+		// .//*[@class='container']//input
+		new WebDriverWait(driver, 20).until(ExpectedConditions
+		        .elementToBeClickable(By
+		                .xpath("(//*/div[@class='slds-size_small'])[3]")));
+		List<WebElement> a = driver
+		        .findElements(By
+		                .xpath("//div[@class='slds-size_small']/parent::a/parent::one-app-launcher-menu-item"));
+
+		for (WebElement e : a) {
+			System.out.println(e);
+			System.out.println(e.getText());
+
+			if (e.getText().equals("Sales")) {
+				WebElement test = e;
+				test.click();
+			}
+			
+			driver.findElement(By.xpath("//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[text()='Accounts")).isDisplayed();
+			 new WebDriverWait(driver, 40)
+			 .until(ExpectedConditions.elementToBeClickable(By
+			 .xpath("*//a[@href='/lightning/o/Account/home']//following-sibling::one-app-nav-bar-item-dropdown")))
+			 .click();
+		}
+	}
+}

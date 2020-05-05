@@ -1,0 +1,42 @@
+package com.salesforce.automaton;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Base {
+
+	private static WebDriver driver;
+
+	public static WebDriver getDriver(String browserName) {
+		if (driver == null) {
+			if (browserName.equalsIgnoreCase("Chrome")) {
+				System.setProperty("webdriver.chrome.driver",
+				        "test/reources/chromedriver.exe");
+				driver = new ChromeDriver();
+			} else if (browserName.equalsIgnoreCase("Firefox")) {
+				System.setProperty("webdriver.gecko.driver",
+				        "test/reources/geckodriver.exe");
+				driver = new FirefoxDriver();
+			} else {
+				System.out.println("Incorrect browser name passed.");
+				return null;
+			}
+			return driver;
+		}
+	}
+
+	public static void openUrl(String text) {
+		driver.get(text);
+
+	}
+
+	public static void closeWindow() {
+		driver.quit();
+	}
+
+	public static WebDriver getDriverInstance() {
+		return driver;
+	}
+
+}

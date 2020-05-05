@@ -1,0 +1,46 @@
+package com.salesforce.automation;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.salesforce.automaton.Base;
+import com.salesforce.automaton.Constants;
+import com.salesforce.pages.LandingPage;
+import com.salesforce.pages.LoginPage;
+
+public class TestCase_Login {
+	LoginPage   loginPage;
+	LandingPage landingPage;
+
+	@BeforeClass
+	public void InitializePage() {
+		loginPage = new LoginPage();
+		landingPage = new LandingPage();
+	}
+
+	@Test
+	public void A_InvalidUserName() {
+		loginPage.setTxtUsername("kushalsh");
+		loginPage.setTxtPassword("test");
+		loginPage.clickBtnLogin();
+		Assert.assertTrue(
+				loginPage
+				.getLblInvalidLogin()
+				.contains(
+						"Please check your username and password","This is expected");
+	}
+
+	@BeforeMethod
+	public void beforeMethod() {
+		Base.openUrl(Constants.URL_SALESFORCELOGIN);
+	}
+
+	@AfterClass
+	public void afterClass() {
+		Base.closeWindow();
+	}
+
+}

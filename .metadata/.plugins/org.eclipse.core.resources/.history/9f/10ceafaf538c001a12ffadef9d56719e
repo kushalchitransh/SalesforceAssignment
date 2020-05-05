@@ -1,0 +1,39 @@
+package com.salesforce.automation;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.salesforce.automaton.Base;
+import com.salesforce.pages.LandingPage;
+import com.salesforce.pages.LoginPage;
+
+public class TestCase_Salesforce_CheckUI {
+	LoginPage   loginPage;
+	LandingPage landingPage;
+
+	@BeforeClass
+	public void InitializePage() {
+		loginPage = new LoginPage();
+		landingPage = new LandingPage();
+		Base.getImplicitWait(20);
+	}
+
+	@Test
+	public void f() {
+	}
+
+	@BeforeMethod
+	public void beforeMethod() {
+	}
+
+	@BeforeClass
+	public void beforeClass() {
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+}

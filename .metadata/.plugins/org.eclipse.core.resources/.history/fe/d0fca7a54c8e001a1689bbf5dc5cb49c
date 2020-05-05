@@ -1,0 +1,169 @@
+package com.salesforce.automation;
+
+import java.util.List;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.salesforce.automaton.Base;
+import com.salesforce.automaton.Constants;
+import com.salesforce.pages.AccountPage;
+import com.salesforce.pages.LandingPage;
+import com.salesforce.pages.LoginPage;
+import com.salesforce.pages.SalesAppPage;
+
+public class TestCase_Account
+{
+	LoginPage		loginPage;
+	LandingPage		landingPage;
+	SalesAppPage	salesAppPage;
+	AccountPage		accountPage;
+	String			className	= TestCase_Account.class.getName();
+	String			accountName	= Base.generateName("Account");
+	String			lastName	= Base.generateName("Contact");
+	
+	@BeforeClass
+	public void InitializePage()
+	{
+		loginPage = new LoginPage();
+		landingPage = new LandingPage();
+		salesAppPage = new SalesAppPage();
+		accountPage = new AccountPage();
+		Base.getImplicitWait(20);
+		Base.getLogger(className).info("Browser initialized......");
+		Base.openUrl(Constants.URL_SALESFORCELOGIN);
+		loginPage.setTxtUsername(Constants.INPUT_USERNAME);
+		loginPage.setTxtPassword(Constants.INPUT_PASSWORD);
+		loginPage.clickBtnLogin();
+		Base.getLogger(className).info("Logged In Successfully....");
+		Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+	}
+	
+	@BeforeMethod
+	public void initializeURL()
+	{
+		
+	}
+	
+	@Test
+	public void F_ValidateAppChange()
+	{
+		Base.getLogger(className).info("Test started --------------F_ValidateAppChange");
+		// try
+		// {
+		// if ( loginPage.getLblSessionEnd().size() != 0 )
+		// {
+		// Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+		// Base.getDriverInstance().navigate().refresh();
+		// }
+		// } catch (Exception e)
+		// {
+		// System.out.println("The session has timed out");
+		// }
+		Base.getDriverInstance().navigate().refresh();
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, landingPage.getBtnAppLauncher()).click();
+		Base.getLogger(className).info("Clicked on app launcher Icon");
+		
+		landingPage.setTxtSearchApp(Constants.INPUT_SEARCH_TEXT);
+		
+		Base.getLogger(className).info("Entered text in search app text box");
+		List < WebElement > searchResults = landingPage.getListSearchResults();
+		for ( WebElement iterator : searchResults )
+		{
+			if ( iterator.getText().equals(Constants.INPUT_SEARCH_TEXT) )
+			{
+				iterator.click();
+			}
+		}
+		Base.getLogger(className).info("Clicked on the searched text");
+		Assert.assertTrue(salesAppPage.getBtnAccounts().isDisplayed());
+		Base.getLogger(className).info("The user has navigated to Sales Page.");
+	}//
+		//
+	
+	@Test
+	public void G_ValidateAccountCreation()
+	{
+		Base.getLogger(className).info("Test started --------------G_ValidateAccountCreation");
+		
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, salesAppPage.getBtnAccountDropDown());
+		salesAppPage.clickBtnAccountDropdown();
+		Base.getLogger(className).info("Clicked on accounts dropdown");
+		//
+		//
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, salesAppPage.getBtnNewAccount());
+		salesAppPage.clickBtnNewAccount();
+		Base.getLogger(className).info("Clicked on New Accounts Button in the dropdown");
+		//
+		//
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, accountPage.getLblNewAccountHeader());
+		Assert.assertTrue(accountPage.getLblNewAccountHeader().isDisplayed());
+		Base.getLogger(className).info("New Accounts Screen is visible");
+		//
+		//
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, accountPage.getTxtAccountName());
+		// String accountName = Base.generateName("Account");
+		accountPage.setTxtAccountName(accountName);
+		Base.getLogger(className).info("Entered Account Name");
+		//
+		//
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, accountPage.getBtnSaveAccount());
+		accountPage.clickBtnSaveAccount();
+		Base.getLogger(className).info("Clicked Save Button");
+		//
+		//
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, accountPage.getAlertAccountCreated());
+		Assert.assertTrue(accountPage.getAlertAccountCreatedMessage().contains(accountName));
+		Base.getLogger(className).info("Verified the account is created Successfully and the message as well");
+	}
+	
+	@Test
+	public void H_ValidateContactCreation() throws InterruptedException
+	{
+		Base.getLogger(className).info("Test started --------------H_ValidateContactCreation");
+		Thread.sleep(5000);
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 30, accountPage.getBtnNewContact());
+		accountPage.clickBtnNewContact();
+		Base.getLogger(className).info("Clicked on New Contact Button");
+		//
+		//
+		Assert.assertTrue(accountPage.getLblNewontactHeader().isDisplayed());
+		Base.getLogger(className).info("New Contact Screen is visible");
+		//
+		//
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, accountPage.getTxtContactLastName());
+		// String lastName = Base.generateName("Contact");
+		accountPage.setTxtLastName(lastName);
+		Base.getLogger(className).info("Entered New Contact Last Name");
+		//
+		//
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, accountPage.getLblContactAccountName());
+		Assert.assertTrue(accountPage.getTextLblContactAccountName().contains(accountName));
+		Base.getLogger(className).info("Verified the account name exists against the account field");
+		//
+		//
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, accountPage.getBtnSaveContact());
+		accountPage.clickBtnSaveContact();
+		Base.getLogger(className).info("Saved New Contact");
+		//
+		//
+		Base.getWaitforelementclickable(Base.getDriverInstance(), 20, accountPage.getAlertContactCreated());
+		Assert.assertTrue(accountPage.getAlertContactCreatedMessage().contains(lastName));
+		Base.getLogger(className).info("Verified the account is created Successfully and the message as well");
+		//
+		//
+		
+	}
+	
+	@AfterTest
+	public void closeBrowser()
+	{
+		// Base.getDriverInstance().quit();
+	}
+	
+}

@@ -1,0 +1,121 @@
+package com.salesforce.automation;
+
+import java.util.List;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.salesforce.automaton.Base;
+import com.salesforce.automaton.Constants;
+import com.salesforce.pages.AccountPage;
+import com.salesforce.pages.LandingPage;
+import com.salesforce.pages.LoginPage;
+import com.salesforce.pages.SalesAppPage;
+
+public class TestCase_Account {
+	LoginPage    loginPage;
+	LandingPage  landingPage;
+	SalesAppPage salesAppPage;
+	AccountPage  accountPage;
+	String       className = TestCase_Salesforce_CheckUI.class.getName();
+
+	@BeforeClass
+	public void InitializePage() {
+		loginPage = new LoginPage();
+		landingPage = new LandingPage();
+		salesAppPage = new SalesAppPage();
+		accountPage = new AccountPage();
+		Base.getImplicitWait(20);
+	}
+
+	@BeforeMethod
+	public void initializeURL() {
+		Base.getLogger(className).info("Browser initialized......");
+		Base.openUrl(Constants.URL_SALESFORCELOGIN);
+		loginPage.setTxtUsername(Constants.INPUT_USERNAME);
+		loginPage.setTxtPassword(Constants.INPUT_PASSWORD);
+		loginPage.clickBtnLogin();
+		Base.getLogger(className).info("Logged In Successfully....");
+		Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+
+	}
+
+	@Test
+	public void H_ValidateAccountCreation() {
+		Base.getLogger(className).info(
+		        "Test started --------------H_ValidateAccountCreation");
+		try {
+			if (loginPage.getLblSessionEnd().size() != 0) {
+				Base.performKeyboardActions(Base.getDriverInstance(),
+				        Keys.ENTER);
+				Base.getDriverInstance().navigate().refresh();
+			}
+		} catch (Exception e) {
+			System.out.println("The session has timed out");
+		}
+		Base.getDriverInstance().navigate().refresh();
+		Base.getWait(Base.getDriverInstance(), 20)
+		        .until(ExpectedConditions.elementToBeClickable(landingPage
+		                .getBtnAppLauncher())).click();
+		Base.getLogger(className).info("Clicked on app launcher Icon");
+
+		landingPage.setTxtSearchApp(Constants.INPUT_SEARCH_TEXT);
+
+		Base.getLogger(className).info("Entered text in search app text box");
+		List<WebElement> searchResults = landingPage.getListSearchResults();
+		for (WebElement iterator : searchResults) {
+			if (iterator.getText().equals(Constants.INPUT_SEARCH_TEXT)) {
+				iterator.click();
+			}
+		}
+		Base.getLogger(className).info("Clicked on the searched text");
+		Assert.assertTrue(salesAppPage.getBtnAccounts().isDisplayed());
+		Base.getLogger(className).info("The user has navigated to Sales Page.");
+		Base.getWait(Base.getDriverInstance(), 20).until(
+		        ExpectedConditions.elementToBeClickable(salesAppPage
+		                .getBtnAccountDropDown()));
+		salesAppPage.clickBtnAccountDropdown();
+		Base.getLogger(className).info("Clicked on accounts dropdown");
+		Base.getWait(Base.getDriverInstance(), 20).until(
+		        ExpectedConditions.elementToBeClickable(salesAppPage
+		                .getBtnNewAccount()));
+		salesAppPage.clickBtnNewAccount();
+		Base.getLogger(className).info(
+		        "Clicked on New Accounts Button in the dropdown");
+		Base.getWait(Base.getDriverInstance(), 20).until(
+		        ExpectedConditions.elementToBeClickable(accountPage
+		                .getLblNewAccountHeader()));
+		Assert.assertTrue(accountPage.getLblNewAccountHeader().isDisplayed());
+		Base.getLogger(className).info("New Accounts Screen is visible");
+		Base.getWait(Base.getDriverInstance(), 20).until(
+		        ExpectedConditions.elementToBeClickable(accountPage
+		                .getTxtAccountName()));
+		accountPage.setTxtAccountName(Constants.INPUT_ACCOUNTNAME);
+		Base.getLogger(className).info("Entered Account Name");
+		Base.getWait(Base.getDriverInstance(), 20).until(
+		        ExpectedConditions.elementToBeClickable(accountPage
+		                .getBtnSaveAccount()));
+		accountPage.clickBtnSaveAccount();
+		Base.getLogger(className).info("Clicked Save Button");
+		Base.getWait(Base.getDriverInstance(), 20).until(
+		        ExpectedConditions.elementToBeClickable(accountPage
+		                .getAlertAccountCreated()));
+		Assert.assertTrue(accountPage.getAlertAccountCreatedMessage().contains(
+		        Constants.INPUT_ACCOUNTNAME));
+		Base.getLogger(className)
+		        .info("Verified the account is created Successfully and the message as well");
+
+	}
+
+	@AfterTest
+	public void closeBrowser() {
+		// Base.getDriverInstance().quit();
+	}
+
+}

@@ -1,0 +1,205 @@
+package com.salesforce.automation;
+
+import java.util.List;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.salesforce.automaton.Base;
+import com.salesforce.automaton.Constants;
+import com.salesforce.pages.AccountPage;
+import com.salesforce.pages.LandingPage;
+import com.salesforce.pages.LoginPage;
+import com.salesforce.pages.SalesAppPage;
+
+public class TestCase_Salesforce_CheckUI
+{
+	LoginPage		loginPage;
+	LandingPage		landingPage;
+	SalesAppPage	salesAppPage;
+	AccountPage		accountPage;
+	String			className	= TestCase_Salesforce_CheckUI.class.getName();
+	
+	@BeforeClass
+	public void InitializePage()
+	{
+		loginPage = new LoginPage();
+		landingPage = new LandingPage();
+		salesAppPage = new SalesAppPage();
+		accountPage = new AccountPage();
+		Base.getImplicitWait(20);
+	}
+	
+	@BeforeMethod
+	public void initializeURL()
+	{
+		Base.getLogger(className).info("Browser initialized......");
+		Base.openUrl(Constants.URL_SALESFORCELOGIN);
+		loginPage.setTxtUsername(Constants.INPUT_USERNAME);
+		loginPage.setTxtPassword(Constants.INPUT_PASSWORD);
+		loginPage.clickBtnLogin();
+		Base.getLogger(className).info("Logged In Successfully....");
+		Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+		
+	}
+	
+	@Test ( enabled = true )
+	public void D_ValidateLandingPageIsLightening()
+	{
+		Base.getLogger(className).info("Test started --------------D_ValidateLandingPageIsLightening");
+		try
+		{
+			if ( loginPage.getLblSessionEnd().size() != 0 )
+			{
+				Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+				Base.getDriverInstance().navigate().refresh();
+			}
+		} catch (Exception e)
+		{
+			System.out.println("The session has timed out");
+		}
+		Base.getDriverInstance().navigate().refresh();
+		String url = Base.getCurrentBrowserURL();
+		Assert.assertTrue(url.contains(Constants.URL_SALESFORCELIGHTENING), "The loanding page is open in lightening mode");
+		Base.getLogger(className).info("The page loaded in Salesforce landing page is in LighteningMode.");
+		Base.getWait(Base.getDriverInstance(), 30).until(ExpectedConditions.elementToBeClickable(landingPage.getBtnViewProfile()));
+		landingPage.clickBtnViewProfile();
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(landingPage.getLinkLogout()));
+		landingPage.ClickLinkLogout();
+	}
+	
+	@Test ( enabled = true )
+	public void E_ValidateSwitchToLightening() throws Exception
+	{
+		Base.getLogger(className).info("Test started --------------E_ValidateSwitchToLightening");
+		try
+		{
+			if ( loginPage.getLblSessionEnd().size() != 0 )
+			{
+				Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+				Base.getDriverInstance().navigate().refresh();
+			}
+		} catch (Exception e)
+		{
+			System.out.println("The session has timed out");
+		}
+		Base.getDriverInstance().navigate().refresh();
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(landingPage.getBtnViewProfile()));
+		landingPage.clickBtnViewProfile();
+		Base.getLogger(className).info("Clicked on View Profile Icon ");
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(landingPage.getLinkSwitchToClassic()));
+		landingPage.clickLinkSwitchToClassic();
+		Base.getLogger(className).info("Clicked on 'Switch to Salesforce Classic'");
+		Assert.assertTrue(Base.getCurrentBrowserURL().contains(Constants.URL_SALESFORCESTANDARD));
+		Base.getLogger(className).info("User has moved to Standard Mode of salesforce.");
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(landingPage.getLinkSwitchToLightening()));
+		landingPage.clickLinkSwitchToLightening();
+		Base.getLogger(className).info("Clicked on 'Switch to lightening experience' link.");
+		if ( !landingPage.getBtnViewProfile().isDisplayed() )
+		{
+			if ( loginPage.getLblSessionEnd().size() != 0 )
+			{
+				Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+				Base.getDriverInstance().navigate().refresh();
+			}
+		}
+		Assert.assertTrue(Base.getCurrentBrowserURL().contains(Constants.URL_SALESFORCELIGHTENING));
+		Base.getLogger(className).info("User is navigated to landing page in lightening mode.");
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(landingPage.getBtnViewProfile()));
+		landingPage.clickBtnViewProfile();
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(landingPage.getLinkLogout()));
+		landingPage.ClickLinkLogout();
+	}
+	
+	@Test ( enabled = true )
+	public void F_ValidateAppChange()
+	{
+		Base.getLogger(className).info("Test started --------------F_ValidateAppChange");
+		try
+		{
+			if ( loginPage.getLblSessionEnd().size() != 0 )
+			{
+				Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+				Base.getDriverInstance().navigate().refresh();
+			}
+		} catch (Exception e)
+		{
+			System.out.println("The session has timed out");
+		}
+		Base.getDriverInstance().navigate().refresh();
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(landingPage.getBtnAppLauncher())).click();
+		Base.getLogger(className).info("Clicked on app launcher Icon");
+		
+		landingPage.setTxtSearchApp(Constants.INPUT_SEARCH_TEXT);
+		
+		Base.getLogger(className).info("Entered text in search app text box");
+		List < WebElement > searchResults = landingPage.getListSearchResults();
+		for ( WebElement iterator : searchResults )
+		{
+			if ( iterator.getText().equals(Constants.INPUT_SEARCH_TEXT) )
+			{
+				iterator.click();
+			}
+		}
+		Base.getLogger(className).info("Clicked on the searched text");
+		Assert.assertTrue(salesAppPage.getBtnAccounts().isDisplayed());
+		
+		Base.getLogger(className).info("The user has navigated to Sales Page.");
+	}
+	
+	@Test ( enabled = true )
+	public void G_ValidateStartAccountPage()
+	{
+		Base.getLogger(className).info("Test started --------------G_ValidateStartAccountPage");
+		try
+		{
+			if ( loginPage.getLblSessionEnd().size() != 0 )
+			{
+				Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+				Base.getDriverInstance().navigate().refresh();
+			}
+		} catch (Exception e)
+		{
+			System.out.println("The session has timed out");
+		}
+		Base.getDriverInstance().navigate().refresh();
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(landingPage.getBtnAppLauncher())).click();
+		Base.getLogger(className).info("Clicked on app launcher Icon");
+		
+		landingPage.setTxtSearchApp(Constants.INPUT_SEARCH_TEXT);
+		
+		Base.getLogger(className).info("Entered text in search app text box");
+		List < WebElement > searchResults = landingPage.getListSearchResults();
+		for ( WebElement iterator : searchResults )
+		{
+			if ( iterator.getText().equals(Constants.INPUT_SEARCH_TEXT) )
+			{
+				iterator.click();
+			}
+		}
+		Base.getLogger(className).info("Clicked on the searched text");
+		Assert.assertTrue(salesAppPage.getBtnAccounts().isDisplayed());
+		Base.getLogger(className).info("The user has navigated to Sales Page.");
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(salesAppPage.getBtnAccountDropDown()));
+		salesAppPage.clickBtnAccountDropdown();
+		Base.getLogger(className).info("Clicked on accounts dropdown");
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(salesAppPage.getBtnNewAccount()));
+		salesAppPage.clickBtnNewAccount();
+		Base.getLogger(className).info("Clicked on New Accounts Button in the dropdown");
+		Base.getWait(Base.getDriverInstance(), 20).until(ExpectedConditions.elementToBeClickable(accountPage.getLblNewAccountHeader()));
+		Assert.assertTrue(accountPage.getLblNewAccountHeader().isDisplayed());
+		Base.getLogger(className).info("New Accounts Screen is visible");
+	}
+	
+	@AfterClass
+	public void closeBrowser()
+	{
+		// Base.closeWindow();
+	}
+}

@@ -1,0 +1,9 @@
+ackage com.salesforce.automation;
+
+import org.testng.annotations.Test;
+
+public class TestCase_Salesforce_CheckUITest {
+  @Test
+  public void f() {
+  }
+}

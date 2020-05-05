@@ -1,0 +1,241 @@
+2020-05-05 00:31:36,923 INFO  [main] (TestCase_Account.java:41) - Browser initialized......
+2020-05-05 00:31:46,516 INFO  [main] (TestCase_Account.java:46) - Logged In Successfully....
+2020-05-05 00:31:53,165 INFO  [main] (TestCase_Account.java:54) - Test started --------------H_ValidateAccountCreation
+2020-05-05 00:32:17,758 INFO  [main] (TestCase_Account.java:68) - Clicked on app launcher Icon
+2020-05-05 00:32:22,811 INFO  [main] (TestCase_Account.java:72) - Entered text in search app text box
+2020-05-05 00:32:23,193 INFO  [main] (TestCase_Account.java:81) - Clicked on the searched text
+2020-05-05 00:32:26,558 INFO  [main] (TestCase_Account.java:83) - The user has navigated to Sales Page.
+2020-05-05 00:32:27,220 INFO  [main] (TestCase_Account.java:86) - Clicked on accounts dropdown
+2020-05-05 00:32:27,824 INFO  [main] (TestCase_Account.java:89) - Clicked on New Accounts Button in the dropdown
+2020-05-05 00:32:31,399 INFO  [main] (TestCase_Account.java:92) - New Accounts Screen is visible
+2020-05-05 00:32:34,947 INFO  [main] (TestCase_Account.java:96) - Entered Account Name
+2020-05-05 00:32:35,252 INFO  [main] (TestCase_Account.java:99) - Clicked Save Button
+2020-05-05 00:32:37,063 INFO  [main] (TestCase_Account.java:102) - Verified the account is created Successfully and the message as well
+2020-05-05 00:32:42,708 INFO  [main] (TestCase_Account.java:106) - Clicked on New Contact Button
+2020-05-05 00:32:42,831 INFO  [main] (TestCase_Account.java:108) - New Contact Screen is visible
+2020-05-05 00:32:44,743 INFO  [main] (TestCase_Account.java:112) - Entered New Contact Last Name
+2020-05-05 00:32:45,069 INFO  [main] (TestCase_Account.java:115) - Saved New Contact
+2020-05-05 00:34:27,088 INFO  [main] (TestCase_Account.java:41) - Browser initialized......
+2020-05-05 00:34:38,768 INFO  [main] (TestCase_Account.java:46) - Logged In Successfully....
+2020-05-05 00:34:41,334 INFO  [main] (TestCase_Account.java:54) - Test started --------------H_ValidateAccountCreation
+2020-05-05 00:35:05,205 INFO  [main] (TestCase_Account.java:68) - Clicked on app launcher Icon
+2020-05-05 00:35:11,345 INFO  [main] (TestCase_Account.java:72) - Entered text in search app text box
+2020-05-05 00:35:12,083 INFO  [main] (TestCase_Account.java:81) - Clicked on the searched text
+2020-05-05 00:35:15,604 INFO  [main] (TestCase_Account.java:83) - The user has navigated to Sales Page.
+2020-05-05 00:35:16,298 INFO  [main] (TestCase_Account.java:86) - Clicked on accounts dropdown
+2020-05-05 00:35:18,786 INFO  [main] (TestCase_Account.java:89) - Clicked on New Accounts Button in the dropdown
+2020-05-05 00:35:20,707 INFO  [main] (TestCase_Account.java:92) - New Accounts Screen is visible
+2020-05-05 00:35:23,933 INFO  [main] (TestCase_Account.java:96) - Entered Account Name
+2020-05-05 00:35:24,431 INFO  [main] (TestCase_Account.java:99) - Clicked Save Button
+2020-05-05 00:35:26,105 INFO  [main] (TestCase_Account.java:102) - Verified the account is created Successfully and the message as well
+2020-05-05 00:35:31,581 INFO  [main] (TestCase_Account.java:106) - Clicked on New Contact Button
+2020-05-05 00:35:31,693 INFO  [main] (TestCase_Account.java:108) - New Contact Screen is visible
+2020-05-05 00:35:33,465 INFO  [main] (TestCase_Account.java:112) - Entered New Contact Last Name
+2020-05-05 00:35:33,783 INFO  [main] (TestCase_Account.java:115) - Saved New Contact
+2020-05-05 00:35:34,679 INFO  [main] (TestCase_Account.java:118) - Verified the account is created Successfully and the message as well
+2020-05-05 00:38:11,438 INFO  [main] (TestCase_Account.java:41) - Browser initialized......
+2020-05-05 00:38:19,909 INFO  [main] (TestCase_Account.java:46) - Logged In Successfully....
+2020-05-05 00:38:26,659 INFO  [main] (TestCase_Account.java:54) - Test started --------------H_ValidateAccountCreation
+2020-05-05 00:38:51,840 INFO  [main] (TestCase_Account.java:68) - Clicked on app launcher Icon
+2020-05-05 00:38:56,218 INFO  [main] (TestCase_Account.java:72) - Entered text in search app text box
+2020-05-05 00:38:56,856 INFO  [main] (TestCase_Account.java:81) - Clicked on the searched text
+2020-05-05 00:39:01,206 INFO  [main] (TestCase_Account.java:83) - The user has navigated to Sales Page.
+2020-05-05 00:39:02,012 INFO  [main] (TestCase_Account.java:86) - Clicked on accounts dropdown
+2020-05-05 00:39:04,356 INFO  [main] (TestCase_Account.java:89) - Clicked on New Accounts Button in the dropdown
+2020-05-05 00:39:06,042 INFO  [main] (TestCase_Account.java:92) - New Accounts Screen is visible
+2020-05-05 00:39:09,279 INFO  [main] (TestCase_Account.java:96) - Entered Account Name
+2020-05-05 00:39:09,820 INFO  [main] (TestCase_Account.java:99) - Clicked Save Button
+2020-05-05 00:39:10,622 INFO  [main] (TestCase_Account.java:102) - Verified the account is created Successfully and the message as well
+2020-05-05 00:39:16,071 INFO  [main] (TestCase_Account.java:106) - Clicked on New Contact Button
+2020-05-05 00:39:16,176 INFO  [main] (TestCase_Account.java:108) - New Contact Screen is visible
+2020-05-05 00:39:18,082 INFO  [main] (TestCase_Account.java:112) - Entered New Contact Last Name
+2020-05-05 00:39:18,460 INFO  [main] (TestCase_Account.java:115) - Saved New Contact
+2020-05-05 00:39:20,680 INFO  [main] (TestCase_Account.java:118) - Verified the account is created Successfully and the message as well
+2020-05-05 01:11:48,265 INFO  [main] (TestCase_Account.java:41) - Browser initialized......
+2020-05-05 01:12:11,099 INFO  [main] (TestCase_Account.java:46) - Logged In Successfully....
+2020-05-05 01:12:11,270 INFO  [main] (TestCase_Account.java:54) - Test started --------------H_ValidateAccountCreation
+2020-05-05 01:12:36,115 INFO  [main] (TestCase_Account.java:68) - Clicked on app launcher Icon
+2020-05-05 01:12:40,229 INFO  [main] (TestCase_Account.java:72) - Entered text in search app text box
+2020-05-05 01:12:40,812 INFO  [main] (TestCase_Account.java:81) - Clicked on the searched text
+2020-05-05 01:12:44,061 INFO  [main] (TestCase_Account.java:83) - The user has navigated to Sales Page.
+2020-05-05 01:12:44,749 INFO  [main] (TestCase_Account.java:86) - Clicked on accounts dropdown
+2020-05-05 01:12:47,465 INFO  [main] (TestCase_Account.java:89) - Clicked on New Accounts Button in the dropdown
+2020-05-05 01:12:49,822 INFO  [main] (TestCase_Account.java:92) - New Accounts Screen is visible
+2020-05-05 01:12:53,013 INFO  [main] (TestCase_Account.java:96) - Entered Account Name
+2020-05-05 01:12:53,357 INFO  [main] (TestCase_Account.java:99) - Clicked Save Button
+2020-05-05 01:12:54,171 INFO  [main] (TestCase_Account.java:102) - Verified the account is created Successfully and the message as well
+2020-05-05 01:12:59,608 INFO  [main] (TestCase_Account.java:106) - Clicked on New Contact Button
+2020-05-05 01:12:59,722 INFO  [main] (TestCase_Account.java:108) - New Contact Screen is visible
+2020-05-05 01:13:02,192 INFO  [main] (TestCase_Account.java:112) - Entered New Contact Last Name
+2020-05-05 01:13:02,766 INFO  [main] (TestCase_Account.java:118) - Saved New Contact
+2020-05-05 01:13:03,649 INFO  [main] (TestCase_Account.java:121) - Verified the account is created Successfully and the message as well
+2020-05-05 01:30:18,901 INFO  [main] (TestCase_Account.java:41) - Browser initialized......
+2020-05-05 01:30:28,503 INFO  [main] (TestCase_Account.java:46) - Logged In Successfully....
+2020-05-05 01:30:36,336 INFO  [main] (TestCase_Account.java:54) - Test started --------------H_ValidateAccountCreation
+2020-05-05 01:31:03,085 INFO  [main] (TestCase_Account.java:68) - Clicked on app launcher Icon
+2020-05-05 01:31:07,597 INFO  [main] (TestCase_Account.java:72) - Entered text in search app text box
+2020-05-05 01:31:08,131 INFO  [main] (TestCase_Account.java:81) - Clicked on the searched text
+2020-05-05 01:31:11,765 INFO  [main] (TestCase_Account.java:83) - The user has navigated to Sales Page.
+2020-05-05 01:31:12,898 INFO  [main] (TestCase_Account.java:88) - Clicked on accounts dropdown
+2020-05-05 01:31:15,711 INFO  [main] (TestCase_Account.java:93) - Clicked on New Accounts Button in the dropdown
+2020-05-05 01:31:17,430 INFO  [main] (TestCase_Account.java:98) - New Accounts Screen is visible
+2020-05-05 01:31:21,110 INFO  [main] (TestCase_Account.java:104) - Entered Account Name
+2020-05-05 01:31:21,567 INFO  [main] (TestCase_Account.java:109) - Clicked Save Button
+2020-05-05 01:31:22,616 INFO  [main] (TestCase_Account.java:114) - Verified the account is created Successfully and the message as well
+2020-05-05 01:31:28,269 INFO  [main] (TestCase_Account.java:120) - Clicked on New Contact Button
+2020-05-05 01:31:28,391 INFO  [main] (TestCase_Account.java:124) - New Contact Screen is visible
+2020-05-05 01:31:30,196 INFO  [main] (TestCase_Account.java:130) - Entered New Contact Last Name
+2020-05-05 01:31:30,450 INFO  [main] (TestCase_Account.java:135) - Verified the account name exists against the account field
+2020-05-05 01:31:31,101 INFO  [main] (TestCase_Account.java:140) - Saved New Contact
+2020-05-05 01:31:33,110 INFO  [main] (TestCase_Account.java:145) - Verified the account is created Successfully and the message as well
+2020-05-05 02:06:43,160 INFO  [main] (TestCase_Account.java:38) - Browser initialized......
+2020-05-05 02:06:52,388 INFO  [main] (TestCase_Account.java:43) - Logged In Successfully....
+2020-05-05 02:06:58,348 INFO  [main] (TestCase_Account.java:56) - Test started --------------H_ValidateAccountCreation
+2020-05-05 02:07:24,206 INFO  [main] (TestCase_Account.java:70) - Clicked on app launcher Icon
+2020-05-05 02:07:27,473 INFO  [main] (TestCase_Account.java:74) - Entered text in search app text box
+2020-05-05 02:07:27,935 INFO  [main] (TestCase_Account.java:83) - Clicked on the searched text
+2020-05-05 02:07:31,164 INFO  [main] (TestCase_Account.java:85) - The user has navigated to Sales Page.
+2020-05-05 02:07:31,744 INFO  [main] (TestCase_Account.java:90) - Clicked on accounts dropdown
+2020-05-05 02:07:32,298 INFO  [main] (TestCase_Account.java:95) - Clicked on New Accounts Button in the dropdown
+2020-05-05 02:07:34,699 INFO  [main] (TestCase_Account.java:100) - New Accounts Screen is visible
+2020-05-05 02:07:37,834 INFO  [main] (TestCase_Account.java:106) - Entered Account Name
+2020-05-05 02:07:38,142 INFO  [main] (TestCase_Account.java:111) - Clicked Save Button
+2020-05-05 02:07:39,166 INFO  [main] (TestCase_Account.java:116) - Verified the account is created Successfully and the message as well
+2020-05-05 02:07:39,192 INFO  [main] (TestCase_Account.java:122) - Test started --------------I_ValidateContactCreation
+2020-05-05 02:07:44,672 INFO  [main] (TestCase_Account.java:126) - Clicked on New Contact Button
+2020-05-05 02:07:44,798 INFO  [main] (TestCase_Account.java:130) - New Contact Screen is visible
+2020-05-05 02:07:46,421 INFO  [main] (TestCase_Account.java:136) - Entered New Contact Last Name
+2020-05-05 02:07:46,564 INFO  [main] (TestCase_Account.java:141) - Verified the account name exists against the account field
+2020-05-05 02:07:46,904 INFO  [main] (TestCase_Account.java:146) - Saved New Contact
+2020-05-05 02:07:47,816 INFO  [main] (TestCase_Account.java:151) - Verified the account is created Successfully and the message as well
+2020-05-05 02:10:22,707 INFO  [main] (TestCase_Login_DevAcc.java:27) - Browser initialized......
+2020-05-05 02:10:25,875 INFO  [main] (TestCase_Login_DevAcc.java:41) - Test started -------------- A_InvalidUserName
+2020-05-05 02:10:26,422 INFO  [main] (TestCase_Login_DevAcc.java:43) - Entered the user name kushalsh
+2020-05-05 02:10:27,504 INFO  [main] (TestCase_Login_DevAcc.java:45) - Entered the password Summer@2015
+2020-05-05 02:10:28,662 INFO  [main] (TestCase_Login_DevAcc.java:47) - Clicked on Login Button
+2020-05-05 02:10:28,960 INFO  [main] (TestCase_Login_DevAcc.java:49) - Waiting for the validation message to appear
+2020-05-05 02:10:30,280 INFO  [main] (TestCase_Login_DevAcc.java:56) - Test started-------------- B_InvalidPassword
+2020-05-05 02:10:31,016 INFO  [main] (TestCase_Login_DevAcc.java:58) - Entered the user name kushalchitransh@gmail.com
+2020-05-05 02:10:31,526 INFO  [main] (TestCase_Login_DevAcc.java:60) - Entered the password Test
+2020-05-05 02:10:32,444 INFO  [main] (TestCase_Login_DevAcc.java:62) - Clicked on Login Button
+2020-05-05 02:10:32,720 INFO  [main] (TestCase_Login_DevAcc.java:64) - Waiting for the validation message to appear
+2020-05-05 02:10:33,742 INFO  [main] (TestCase_Login_DevAcc.java:71) - Test started -------------- C_ValidLogin
+2020-05-05 02:10:34,418 INFO  [main] (TestCase_Login_DevAcc.java:73) - Entered the user name kushalchitransh@gmail.com
+2020-05-05 02:10:34,751 INFO  [main] (TestCase_Login_DevAcc.java:75) - Entered the password Summer@2015
+2020-05-05 02:10:38,766 INFO  [main] (TestCase_Login_DevAcc.java:77) - Clicked on Login Button
+2020-05-05 02:10:46,447 INFO  [main] (TestCase_Login_DevAcc.java:81) - Waiting for the landing page
+2020-05-05 02:10:46,549 INFO  [main] (TestCase_Login_DevAcc.java:83) - Landing page appears successfully
+2020-05-05 02:20:11,978 INFO  [main] (TestCase_Salesforce_CheckUI.java:35) - Browser initialized......
+2020-05-05 02:20:34,040 INFO  [main] (TestCase_Salesforce_CheckUI.java:40) - Logged In Successfully....
+2020-05-05 02:20:34,133 INFO  [main] (TestCase_Salesforce_CheckUI.java:53) - Test started --------------D_ValidateLandingPageIsLightening
+2020-05-05 02:20:36,041 INFO  [main] (TestCase_Salesforce_CheckUI.java:68) - The page loaded in Salesforce landing page is in LighteningMode.
+2020-05-05 02:20:36,080 INFO  [main] (TestCase_Salesforce_CheckUI.java:74) - Test started --------------E_ValidateSwitchToLightening
+2020-05-05 02:20:40,063 INFO  [main] (TestCase_Salesforce_CheckUI.java:84) - Clicked on View Profile Icon 
+2020-05-05 02:20:47,771 INFO  [main] (TestCase_Salesforce_CheckUI.java:87) - Clicked on 'Switch to Salesforce Classic'
+2020-05-05 02:20:47,824 INFO  [main] (TestCase_Salesforce_CheckUI.java:89) - User has moved to Standard Mode of salesforce.
+2020-05-05 02:20:48,238 INFO  [main] (TestCase_Salesforce_CheckUI.java:92) - Clicked on 'Switch to lightening experience' link.
+2020-05-05 02:24:36,165 INFO  [main] (TestCase_Salesforce_CheckUI.java:35) - Browser initialized......
+2020-05-05 02:24:47,426 INFO  [main] (TestCase_Salesforce_CheckUI.java:40) - Logged In Successfully....
+2020-05-05 02:24:53,488 INFO  [main] (TestCase_Salesforce_CheckUI.java:53) - Test started --------------D_ValidateLandingPageIsLightening
+2020-05-05 02:24:56,534 INFO  [main] (TestCase_Salesforce_CheckUI.java:68) - The page loaded in Salesforce landing page is in LighteningMode.
+2020-05-05 02:24:56,568 INFO  [main] (TestCase_Salesforce_CheckUI.java:74) - Test started --------------E_ValidateSwitchToLightening
+2020-05-05 02:25:02,764 INFO  [main] (TestCase_Salesforce_CheckUI.java:84) - Clicked on View Profile Icon 
+2020-05-05 02:25:10,493 INFO  [main] (TestCase_Salesforce_CheckUI.java:87) - Clicked on 'Switch to Salesforce Classic'
+2020-05-05 02:25:10,543 INFO  [main] (TestCase_Salesforce_CheckUI.java:89) - User has moved to Standard Mode of salesforce.
+2020-05-05 02:25:10,800 INFO  [main] (TestCase_Salesforce_CheckUI.java:92) - Clicked on 'Switch to lightening experience' link.
+2020-05-05 02:25:17,902 INFO  [main] (TestCase_Salesforce_CheckUI.java:103) - User is navigated back to landing page in lightening mode.
+2020-05-05 02:29:35,619 INFO  [main] (TestCase_Login_DevAcc.java:26) - Browser initialized......
+2020-05-05 02:29:38,969 INFO  [main] (TestCase_Login_DevAcc.java:34) - Test started -------------- A_InvalidUserName
+2020-05-05 02:29:40,554 INFO  [main] (TestCase_Login_DevAcc.java:36) - Entered the user name kushalsh
+2020-05-05 02:29:41,120 INFO  [main] (TestCase_Login_DevAcc.java:38) - Entered the password Summer@2015
+2020-05-05 02:29:42,170 INFO  [main] (TestCase_Login_DevAcc.java:40) - Clicked on Login Button
+2020-05-05 02:29:42,392 INFO  [main] (TestCase_Login_DevAcc.java:42) - Waiting for the validation message to appear
+2020-05-05 02:29:42,769 INFO  [main] (TestCase_Login_DevAcc.java:49) - Test started-------------- B_InvalidPassword
+2020-05-05 02:29:43,537 INFO  [main] (TestCase_Login_DevAcc.java:51) - Entered the user name kushalchitransh@gmail.com
+2020-05-05 02:29:43,930 INFO  [main] (TestCase_Login_DevAcc.java:53) - Entered the password Test
+2020-05-05 02:29:44,871 INFO  [main] (TestCase_Login_DevAcc.java:55) - Clicked on Login Button
+2020-05-05 02:29:45,140 INFO  [main] (TestCase_Login_DevAcc.java:57) - Waiting for the validation message to appear
+2020-05-05 02:29:45,333 INFO  [main] (TestCase_Login_DevAcc.java:64) - Test started -------------- C_ValidLogin
+2020-05-05 02:29:46,746 INFO  [main] (TestCase_Login_DevAcc.java:66) - Entered the user name kushalchitransh@gmail.com
+2020-05-05 02:29:47,061 INFO  [main] (TestCase_Login_DevAcc.java:68) - Entered the password Summer@2015
+2020-05-05 02:29:51,601 INFO  [main] (TestCase_Login_DevAcc.java:70) - Clicked on Login Button
+2020-05-05 02:29:59,882 INFO  [main] (TestCase_Login_DevAcc.java:74) - Waiting for the landing page
+2020-05-05 02:29:59,981 INFO  [main] (TestCase_Login_DevAcc.java:76) - Landing page appears successfully
+2020-05-05 02:30:09,725 INFO  [main] (TestCase_Salesforce_CheckUI.java:35) - Browser initialized......
+2020-05-05 02:30:17,375 INFO  [main] (TestCase_Salesforce_CheckUI.java:40) - Logged In Successfully....
+2020-05-05 02:30:21,205 INFO  [main] (TestCase_Salesforce_CheckUI.java:53) - Test started --------------D_ValidateLandingPageIsLightening
+2020-05-05 02:30:42,634 INFO  [main] (TestCase_Salesforce_CheckUI.java:68) - The page loaded in Salesforce landing page is in LighteningMode.
+2020-05-05 02:30:42,650 INFO  [main] (TestCase_Salesforce_CheckUI.java:74) - Test started --------------E_ValidateSwitchToLightening
+2020-05-05 02:30:46,591 INFO  [main] (TestCase_Salesforce_CheckUI.java:84) - Clicked on View Profile Icon 
+2020-05-05 02:30:55,976 INFO  [main] (TestCase_Salesforce_CheckUI.java:87) - Clicked on 'Switch to Salesforce Classic'
+2020-05-05 02:30:56,017 INFO  [main] (TestCase_Salesforce_CheckUI.java:89) - User has moved to Standard Mode of salesforce.
+2020-05-05 02:30:56,392 INFO  [main] (TestCase_Salesforce_CheckUI.java:92) - Clicked on 'Switch to lightening experience' link.
+2020-05-05 02:31:01,869 INFO  [main] (TestCase_Salesforce_CheckUI.java:103) - User is navigated back to landing page in lightening mode.
+2020-05-05 02:31:04,997 INFO  [main] (TestCase_Account.java:38) - Browser initialized......
+2020-05-05 02:31:10,475 INFO  [main] (TestCase_Account.java:43) - Logged In Successfully....
+2020-05-05 02:31:13,765 INFO  [main] (TestCase_Account.java:56) - Test started --------------H_ValidateAccountCreation
+2020-05-05 02:31:36,694 INFO  [main] (TestCase_Account.java:70) - Clicked on app launcher Icon
+2020-05-05 02:31:40,664 INFO  [main] (TestCase_Account.java:74) - Entered text in search app text box
+2020-05-05 02:31:41,316 INFO  [main] (TestCase_Account.java:83) - Clicked on the searched text
+2020-05-05 02:31:45,061 INFO  [main] (TestCase_Account.java:85) - The user has navigated to Sales Page.
+2020-05-05 02:31:46,739 INFO  [main] (TestCase_Account.java:90) - Clicked on accounts dropdown
+2020-05-05 02:31:48,147 INFO  [main] (TestCase_Account.java:95) - Clicked on New Accounts Button in the dropdown
+2020-05-05 02:31:50,844 INFO  [main] (TestCase_Account.java:100) - New Accounts Screen is visible
+2020-05-05 02:31:53,595 INFO  [main] (TestCase_Account.java:106) - Entered Account Name
+2020-05-05 02:31:53,884 INFO  [main] (TestCase_Account.java:111) - Clicked Save Button
+2020-05-05 02:31:54,879 INFO  [main] (TestCase_Account.java:116) - Verified the account is created Successfully and the message as well
+2020-05-05 02:31:54,896 INFO  [main] (TestCase_Account.java:122) - Test started --------------I_ValidateContactCreation
+2020-05-05 02:32:00,335 INFO  [main] (TestCase_Account.java:126) - Clicked on New Contact Button
+2020-05-05 02:32:00,460 INFO  [main] (TestCase_Account.java:130) - New Contact Screen is visible
+2020-05-05 02:32:02,419 INFO  [main] (TestCase_Account.java:136) - Entered New Contact Last Name
+2020-05-05 02:32:02,551 INFO  [main] (TestCase_Account.java:141) - Verified the account name exists against the account field
+2020-05-05 02:32:02,847 INFO  [main] (TestCase_Account.java:146) - Saved New Contact
+2020-05-05 02:32:04,800 INFO  [main] (TestCase_Account.java:151) - Verified the account is created Successfully and the message as well
+2020-05-05 02:42:50,569 INFO  [main] (TestCase_Login_DevAcc.java:26) - Browser initialized......
+2020-05-05 02:42:54,614 INFO  [main] (TestCase_Login_DevAcc.java:34) - Test started -------------- A_InvalidUserName
+2020-05-05 02:42:55,677 INFO  [main] (TestCase_Login_DevAcc.java:36) - Entered the user name kushalsh
+2020-05-05 02:42:56,945 INFO  [main] (TestCase_Login_DevAcc.java:38) - Entered the password Summer@2015
+2020-05-05 02:42:57,510 INFO  [main] (TestCase_Login_DevAcc.java:40) - Clicked on Login Button
+2020-05-05 02:42:57,694 INFO  [main] (TestCase_Login_DevAcc.java:42) - Waiting for the validation message to appear
+2020-05-05 02:42:58,243 INFO  [main] (TestCase_Login_DevAcc.java:49) - Test started-------------- B_InvalidPassword
+2020-05-05 02:42:58,709 INFO  [main] (TestCase_Login_DevAcc.java:51) - Entered the user name kushalchitransh@gmail.com
+2020-05-05 02:42:59,103 INFO  [main] (TestCase_Login_DevAcc.java:53) - Entered the password Test
+2020-05-05 02:43:00,268 INFO  [main] (TestCase_Login_DevAcc.java:55) - Clicked on Login Button
+2020-05-05 02:43:00,464 INFO  [main] (TestCase_Login_DevAcc.java:57) - Waiting for the validation message to appear
+2020-05-05 02:43:01,866 INFO  [main] (TestCase_Login_DevAcc.java:64) - Test started -------------- C_ValidLogin
+2020-05-05 02:43:02,584 INFO  [main] (TestCase_Login_DevAcc.java:66) - Entered the user name kushalchitransh@gmail.com
+2020-05-05 02:43:02,829 INFO  [main] (TestCase_Login_DevAcc.java:68) - Entered the password Summer@2015
+2020-05-05 02:43:06,911 INFO  [main] (TestCase_Login_DevAcc.java:70) - Clicked on Login Button
+2020-05-05 02:43:14,798 INFO  [main] (TestCase_Login_DevAcc.java:74) - Waiting for the landing page
+2020-05-05 02:43:14,911 INFO  [main] (TestCase_Login_DevAcc.java:76) - Landing page appears successfully
+2020-05-05 02:43:23,715 INFO  [main] (TestCase_Salesforce_CheckUI.java:32) - Browser initialized......
+2020-05-05 02:43:29,426 INFO  [main] (TestCase_Salesforce_CheckUI.java:37) - Logged In Successfully....
+2020-05-05 02:43:31,911 INFO  [main] (TestCase_Salesforce_CheckUI.java:50) - Test started --------------D_ValidateLandingPageIsLightening
+2020-05-05 02:43:54,320 INFO  [main] (TestCase_Salesforce_CheckUI.java:65) - The page loaded in Salesforce landing page is in LighteningMode.
+2020-05-05 02:43:54,337 INFO  [main] (TestCase_Salesforce_CheckUI.java:71) - Test started --------------E_ValidateSwitchToLightening
+2020-05-05 02:43:58,299 INFO  [main] (TestCase_Salesforce_CheckUI.java:81) - Clicked on View Profile Icon 
+2020-05-05 02:44:05,510 INFO  [main] (TestCase_Salesforce_CheckUI.java:84) - Clicked on 'Switch to Salesforce Classic'
+2020-05-05 02:44:05,552 INFO  [main] (TestCase_Salesforce_CheckUI.java:86) - User has moved to Standard Mode of salesforce.
+2020-05-05 02:44:07,290 INFO  [main] (TestCase_Salesforce_CheckUI.java:89) - Clicked on 'Switch to lightening experience' link.
+2020-05-05 02:44:14,235 INFO  [main] (TestCase_Salesforce_CheckUI.java:100) - User is navigated back to landing page in lightening mode.
+2020-05-05 02:44:15,246 INFO  [main] (TestCase_Account.java:38) - Browser initialized......
+2020-05-05 02:44:20,380 INFO  [main] (TestCase_Account.java:43) - Logged In Successfully....
+2020-05-05 02:44:23,795 INFO  [main] (TestCase_Account.java:56) - Test started --------------F_ValidateAppChange
+2020-05-05 02:44:46,447 INFO  [main] (TestCase_Account.java:70) - Clicked on app launcher Icon
+2020-05-05 02:44:50,405 INFO  [main] (TestCase_Account.java:74) - Entered text in search app text box
+2020-05-05 02:44:51,075 INFO  [main] (TestCase_Account.java:83) - Clicked on the searched text
+2020-05-05 02:44:54,401 INFO  [main] (TestCase_Account.java:85) - The user has navigated to Sales Page.
+2020-05-05 02:44:54,413 INFO  [main] (TestCase_Account.java:92) - Test started --------------G_ValidateAccountCreation
+2020-05-05 02:44:55,047 INFO  [main] (TestCase_Account.java:96) - Clicked on accounts dropdown
+2020-05-05 02:44:57,277 INFO  [main] (TestCase_Account.java:101) - Clicked on New Accounts Button in the dropdown
+2020-05-05 02:44:58,712 INFO  [main] (TestCase_Account.java:106) - New Accounts Screen is visible
+2020-05-05 02:45:02,250 INFO  [main] (TestCase_Account.java:112) - Entered Account Name
+2020-05-05 02:45:02,578 INFO  [main] (TestCase_Account.java:117) - Clicked Save Button
+2020-05-05 02:45:07,178 INFO  [main] (TestCase_Account.java:122) - Verified the account is created Successfully and the message as well
+2020-05-05 02:45:07,195 INFO  [main] (TestCase_Account.java:128) - Test started --------------H_ValidateContactCreation
+2020-05-05 02:45:12,667 INFO  [main] (TestCase_Account.java:132) - Clicked on New Contact Button
+2020-05-05 02:45:12,776 INFO  [main] (TestCase_Account.java:136) - New Contact Screen is visible
+2020-05-05 02:45:14,471 INFO  [main] (TestCase_Account.java:142) - Entered New Contact Last Name
+2020-05-05 02:45:14,602 INFO  [main] (TestCase_Account.java:147) - Verified the account name exists against the account field
+2020-05-05 02:45:14,887 INFO  [main] (TestCase_Account.java:152) - Saved New Contact
+2020-05-05 02:45:15,873 INFO  [main] (TestCase_Account.java:157) - Verified the account is created Successfully and the message as well

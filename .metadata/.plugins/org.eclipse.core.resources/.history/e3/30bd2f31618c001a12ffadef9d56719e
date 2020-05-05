@@ -1,0 +1,135 @@
+2020-05-01 18:34:14,412 INFO  [main] (App.java:28) - Driver Initialized
+2020-05-01 18:48:52,000 INFO  [main] (App.java:28) - Driver Initialized
+2020-05-01 23:41:18,015 INFO  [main] (App.java:28) - Driver Initialized
+2020-05-02 00:10:28,579 INFO  [main] (App.java:28) - Driver Initialized
+2020-05-02 00:17:44,457 INFO  [main] (App.java:28) - Driver Initialized
+2020-05-02 01:07:02,602 INFO  [main] (TestCase_Login.java:32) - Entered the user name
+2020-05-02 01:07:03,214 INFO  [main] (TestCase_Login.java:34) - Entered the password
+2020-05-02 01:07:03,863 INFO  [main] (TestCase_Login.java:36) - Clisked on Login Button
+2020-05-02 01:07:04,138 INFO  [main] (TestCase_Login.java:40) - Waiting for the validation message to appear
+2020-05-02 02:02:42,502 INFO  [main] (TestCase_Login.java:36) - Entered the user name
+2020-05-02 02:02:43,205 INFO  [main] (TestCase_Login.java:38) - Entered the password
+2020-05-02 02:02:43,903 INFO  [main] (TestCase_Login.java:40) - Clicked on Login Button
+2020-05-02 02:02:44,605 INFO  [main] (TestCase_Login.java:44) - Waiting for the validation message to appear
+2020-05-02 02:02:45,995 INFO  [main] (TestCase_Login.java:54) - Entered the user name
+2020-05-02 02:02:46,510 INFO  [main] (TestCase_Login.java:56) - Entered the password
+2020-05-02 02:02:47,561 INFO  [main] (TestCase_Login.java:58) - Clicked on Login Button
+2020-05-02 02:02:47,758 INFO  [main] (TestCase_Login.java:62) - Waiting for the validation message to appear
+2020-05-02 02:02:50,231 INFO  [main] (TestCase_Login.java:72) - Entered the user name
+2020-05-02 02:02:50,474 INFO  [main] (TestCase_Login.java:74) - Entered the password
+2020-05-02 02:02:54,603 INFO  [main] (TestCase_Login.java:76) - Clicked on Login Button
+2020-05-02 02:03:01,544 INFO  [main] (TestCase_Login.java:79) - Waiting for the landing page
+2020-05-02 02:04:58,736 INFO  [main] (TestCase_Login.java:36) - Entered the user name
+2020-05-02 02:05:00,869 INFO  [main] (TestCase_Login.java:38) - Entered the password
+2020-05-02 02:05:01,661 INFO  [main] (TestCase_Login.java:40) - Clicked on Login Button
+2020-05-02 02:05:01,925 INFO  [main] (TestCase_Login.java:44) - Waiting for the validation message to appear
+2020-05-02 02:05:05,073 INFO  [main] (TestCase_Login.java:54) - Entered the user name
+2020-05-02 02:05:05,345 INFO  [main] (TestCase_Login.java:56) - Entered the password
+2020-05-02 02:05:06,186 INFO  [main] (TestCase_Login.java:58) - Clicked on Login Button
+2020-05-02 02:05:06,601 INFO  [main] (TestCase_Login.java:62) - Waiting for the validation message to appear
+2020-05-02 02:05:09,801 INFO  [main] (TestCase_Login.java:72) - Entered the user name
+2020-05-02 02:05:10,183 INFO  [main] (TestCase_Login.java:74) - Entered the password
+2020-05-02 02:05:20,862 INFO  [main] (TestCase_Login.java:76) - Clicked on Login Button
+2020-05-02 02:05:22,524 INFO  [main] (TestCase_Login.java:79) - Waiting for the landing page
+2020-05-02 02:05:22,641 INFO  [main] (TestCase_Login.java:82) - Landing page appears successfully
+2020-05-02 02:10:06,076 INFO  [main] (TestCase_Login.java:36) - Entered the user name kushalsh
+2020-05-02 02:10:06,641 INFO  [main] (TestCase_Login.java:39) - Entered the password Summer@2015
+2020-05-02 02:10:07,439 INFO  [main] (TestCase_Login.java:42) - Clicked on Login Button
+2020-05-02 02:10:08,252 INFO  [main] (TestCase_Login.java:46) - Waiting for the validation message to appear
+2020-05-02 02:10:10,169 INFO  [main] (TestCase_Login.java:56) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 02:10:11,089 INFO  [main] (TestCase_Login.java:59) - Entered the password Test
+2020-05-02 02:10:11,848 INFO  [main] (TestCase_Login.java:62) - Clicked on Login Button
+2020-05-02 02:10:12,039 INFO  [main] (TestCase_Login.java:66) - Waiting for the validation message to appear
+2020-05-02 02:10:15,049 INFO  [main] (TestCase_Login.java:76) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 02:10:15,427 INFO  [main] (TestCase_Login.java:79) - Entered the password Summer@2015
+2020-05-02 02:10:25,014 INFO  [main] (TestCase_Login.java:82) - Clicked on Login Button
+2020-05-02 02:10:26,034 INFO  [main] (TestCase_Login.java:85) - Waiting for the landing page
+2020-05-02 02:10:26,113 INFO  [main] (TestCase_Login.java:88) - Landing page appears successfully
+2020-05-02 03:27:43,545 INFO  [main] (App.java:28) - Driver Initialized
+2020-05-02 03:28:56,327 INFO  [main] (App.java:28) - Driver Initialized
+2020-05-02 03:31:20,990 INFO  [main] (App.java:28) - Driver Initialized
+2020-05-02 03:34:38,848 INFO  [main] (App.java:28) - Driver Initialized
+2020-05-02 12:15:45,921 INFO  [main] (App.java:28) - Driver Initialized
+2020-05-02 14:27:18,293 INFO  [main] (TestCase_Login_DevAcc.java:36) - Entered the user name kushalsh
+2020-05-02 14:27:18,877 INFO  [main] (TestCase_Login_DevAcc.java:39) - Entered the password Summer@2015
+2020-05-02 14:27:19,422 INFO  [main] (TestCase_Login_DevAcc.java:42) - Clicked on Login Button
+2020-05-02 14:27:19,656 INFO  [main] (TestCase_Login_DevAcc.java:46) - Waiting for the validation message to appear
+2020-05-02 14:27:20,572 INFO  [main] (TestCase_Login_DevAcc.java:56) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 14:27:20,805 INFO  [main] (TestCase_Login_DevAcc.java:59) - Entered the password Test
+2020-05-02 14:27:21,482 INFO  [main] (TestCase_Login_DevAcc.java:62) - Clicked on Login Button
+2020-05-02 14:27:22,370 INFO  [main] (TestCase_Login_DevAcc.java:66) - Waiting for the validation message to appear
+2020-05-02 14:27:24,648 INFO  [main] (TestCase_Login_DevAcc.java:76) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 14:27:25,003 INFO  [main] (TestCase_Login_DevAcc.java:79) - Entered the password Summer@2015
+2020-05-02 14:27:35,467 INFO  [main] (TestCase_Login_DevAcc.java:82) - Clicked on Login Button
+2020-05-02 14:27:36,795 INFO  [main] (TestCase_Login_DevAcc.java:87) - Waiting for the landing page
+2020-05-02 14:27:36,879 INFO  [main] (TestCase_Login_DevAcc.java:90) - Landing page appears successfully
+2020-05-02 14:41:31,394 INFO  [main] (TestCase_Login_DevAcc.java:35) - Test started com.salesforce.automation.TestCase_Login_DevAcc
+2020-05-02 14:41:31,966 INFO  [main] (TestCase_Login_DevAcc.java:37) - Entered the user name kushalsh
+2020-05-02 14:41:32,274 INFO  [main] (TestCase_Login_DevAcc.java:40) - Entered the password Summer@2015
+2020-05-02 14:41:32,763 INFO  [main] (TestCase_Login_DevAcc.java:43) - Clicked on Login Button
+2020-05-02 14:41:33,464 INFO  [main] (TestCase_Login_DevAcc.java:47) - Waiting for the validation message to appear
+2020-05-02 14:41:34,123 INFO  [main] (TestCase_Login_DevAcc.java:56) - Test started com.salesforce.automation.TestCase_Login_DevAcc
+2020-05-02 14:41:35,017 INFO  [main] (TestCase_Login_DevAcc.java:58) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 14:41:35,649 INFO  [main] (TestCase_Login_DevAcc.java:61) - Entered the password Test
+2020-05-02 14:41:36,659 INFO  [main] (TestCase_Login_DevAcc.java:64) - Clicked on Login Button
+2020-05-02 14:41:38,127 INFO  [main] (TestCase_Login_DevAcc.java:68) - Waiting for the validation message to appear
+2020-05-02 14:41:38,762 INFO  [main] (TestCase_Login_DevAcc.java:77) - Test started com.salesforce.automation.TestCase_Login_DevAcc
+2020-05-02 14:41:40,488 INFO  [main] (TestCase_Login_DevAcc.java:79) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 14:41:40,839 INFO  [main] (TestCase_Login_DevAcc.java:82) - Entered the password Summer@2015
+2020-05-02 14:41:50,429 INFO  [main] (TestCase_Login_DevAcc.java:85) - Clicked on Login Button
+2020-05-02 14:41:51,651 INFO  [main] (TestCase_Login_DevAcc.java:90) - Waiting for the landing page
+2020-05-02 14:41:51,735 INFO  [main] (TestCase_Login_DevAcc.java:93) - Landing page appears successfully
+2020-05-02 15:04:46,809 INFO  [main] (TestCase_Login_DevAcc.java:35) - Test started A_InvalidUserName
+2020-05-02 15:04:47,619 INFO  [main] (TestCase_Login_DevAcc.java:40) - Entered the user name kushalsh
+2020-05-02 15:04:48,302 INFO  [main] (TestCase_Login_DevAcc.java:43) - Entered the password Summer@2015
+2020-05-02 15:04:48,794 INFO  [main] (TestCase_Login_DevAcc.java:46) - Clicked on Login Button
+2020-05-02 15:04:49,028 INFO  [main] (TestCase_Login_DevAcc.java:50) - Waiting for the validation message to appear
+2020-05-02 15:04:49,662 INFO  [main] (TestCase_Login_DevAcc.java:59) - Test started B_InvalidPassword
+2020-05-02 15:04:50,292 INFO  [main] (TestCase_Login_DevAcc.java:64) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 15:04:51,061 INFO  [main] (TestCase_Login_DevAcc.java:67) - Entered the password Test
+2020-05-02 15:04:51,907 INFO  [main] (TestCase_Login_DevAcc.java:70) - Clicked on Login Button
+2020-05-02 15:04:52,134 INFO  [main] (TestCase_Login_DevAcc.java:74) - Waiting for the validation message to appear
+2020-05-02 15:04:52,911 INFO  [main] (TestCase_Login_DevAcc.java:83) - Test started C_validLogin
+2020-05-02 15:04:53,905 INFO  [main] (TestCase_Login_DevAcc.java:88) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 15:04:54,461 INFO  [main] (TestCase_Login_DevAcc.java:91) - Entered the password Summer@2015
+2020-05-02 15:05:01,924 INFO  [main] (TestCase_Login_DevAcc.java:94) - Clicked on Login Button
+2020-05-02 15:05:07,294 INFO  [main] (TestCase_Login_DevAcc.java:99) - Waiting for the landing page
+2020-05-02 15:05:07,512 INFO  [main] (TestCase_Login_DevAcc.java:102) - Landing page appears successfully
+2020-05-02 15:18:21,069 INFO  [main] (Base.java:94) - Test started -------------------logStartTestCase
+2020-05-02 15:18:21,690 INFO  [main] (TestCase_Login_DevAcc.java:37) - Entered the user name kushalsh
+2020-05-02 15:18:22,013 INFO  [main] (TestCase_Login_DevAcc.java:40) - Entered the password Summer@2015
+2020-05-02 15:18:22,522 INFO  [main] (TestCase_Login_DevAcc.java:43) - Clicked on Login Button
+2020-05-02 15:18:23,226 INFO  [main] (TestCase_Login_DevAcc.java:47) - Waiting for the validation message to appear
+2020-05-02 15:18:23,856 INFO  [main] (TestCase_Login_DevAcc.java:56) - Test started B_InvalidPassword
+2020-05-02 15:18:24,341 INFO  [main] (TestCase_Login_DevAcc.java:61) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 15:18:25,160 INFO  [main] (TestCase_Login_DevAcc.java:64) - Entered the password Test
+2020-05-02 15:18:26,021 INFO  [main] (TestCase_Login_DevAcc.java:67) - Clicked on Login Button
+2020-05-02 15:18:26,769 INFO  [main] (TestCase_Login_DevAcc.java:71) - Waiting for the validation message to appear
+2020-05-02 15:18:27,376 INFO  [main] (TestCase_Login_DevAcc.java:80) - Test started C_validLogin
+2020-05-02 15:18:28,606 INFO  [main] (TestCase_Login_DevAcc.java:85) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 15:18:28,981 INFO  [main] (TestCase_Login_DevAcc.java:88) - Entered the password Summer@2015
+2020-05-02 15:18:38,827 INFO  [main] (TestCase_Login_DevAcc.java:91) - Clicked on Login Button
+2020-05-02 15:18:40,989 INFO  [main] (TestCase_Login_DevAcc.java:96) - Waiting for the landing page
+2020-05-02 15:18:41,100 INFO  [main] (TestCase_Login_DevAcc.java:99) - Landing page appears successfully
+2020-05-02 15:49:59,396 INFO  [main] (TestCase_Login_DevAcc.java:30) - Browser initialized......
+2020-05-02 15:50:02,920 INFO  [main] (TestCase_Login_DevAcc.java:36) - Test started -------------- A_InvalidUserName
+2020-05-02 15:50:03,328 INFO  [main] (TestCase_Login_DevAcc.java:39) - Entered the user name kushalsh
+2020-05-02 15:50:03,598 INFO  [main] (TestCase_Login_DevAcc.java:42) - Entered the password Summer@2015
+2020-05-02 15:50:04,130 INFO  [main] (TestCase_Login_DevAcc.java:45) - Clicked on Login Button
+2020-05-02 15:50:04,286 INFO  [main] (TestCase_Login_DevAcc.java:49) - Waiting for the validation message to appear
+2020-05-02 15:50:04,494 INFO  [main] (TestCase_Login_DevAcc.java:30) - Browser initialized......
+2020-05-02 15:50:05,032 INFO  [main] (TestCase_Login_DevAcc.java:58) - Test started-------------- B_InvalidPassword
+2020-05-02 15:50:05,852 INFO  [main] (TestCase_Login_DevAcc.java:61) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 15:50:06,273 INFO  [main] (TestCase_Login_DevAcc.java:64) - Entered the password Test
+2020-05-02 15:50:07,018 INFO  [main] (TestCase_Login_DevAcc.java:67) - Clicked on Login Button
+2020-05-02 15:50:07,310 INFO  [main] (TestCase_Login_DevAcc.java:71) - Waiting for the validation message to appear
+2020-05-02 15:50:07,422 INFO  [main] (TestCase_Login_DevAcc.java:30) - Browser initialized......
+2020-05-02 15:50:07,882 INFO  [main] (TestCase_Login_DevAcc.java:80) - Test started -------------- C_ValidLogin
+2020-05-02 15:50:08,587 INFO  [main] (TestCase_Login_DevAcc.java:83) - Entered the user name kushalchitransh@gmail.com
+2020-05-02 15:50:08,944 INFO  [main] (TestCase_Login_DevAcc.java:86) - Entered the password Summer@2015
+2020-05-02 15:50:18,942 INFO  [main] (TestCase_Login_DevAcc.java:89) - Clicked on Login Button
+2020-05-02 15:50:20,458 INFO  [main] (TestCase_Login_DevAcc.java:94) - Waiting for the landing page
+2020-05-02 15:50:20,563 INFO  [main] (TestCase_Login_DevAcc.java:97) - Landing page appears successfully
+2020-05-02 15:51:28,330 INFO  [main] (TestCase_Salesforce_CheckUI.java:28) - Browser initialized......
+2020-05-02 15:51:36,298 INFO  [main] (TestCase_Salesforce_CheckUI.java:33) - Logged In Successfully....
+2020-05-02 15:51:36,332 INFO  [main] (TestCase_Salesforce_CheckUI.java:39) - Test started --------------D_ValidateLandingPageIsLightening

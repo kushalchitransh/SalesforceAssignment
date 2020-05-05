@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package com.salesforce.automaton;
+
+import bsh.This;
+
+/**
+ * @author Kushal Shrivastava
+ * @see This class contains all the static and constants
+ */
+public class Constants {
+
+	public static final String URL_SALESFORCELOGIN      = "https://login.salesforce.com/";
+	public static final String URL_SALESFORCELIGHTENING = "https://ap17.lightning.force.com/";
+	public static final String URL_SALESFORCESTANDARD   = "https://ap17.salesforce.com/home/home.jsp?source=lex";
+
+	public static final String INPUT_USERNAME           = "kushalchitransh@gmail.com";
+	public static final String INPUT_PASSWORD           = "Summer@2015";
+	public static final String INPUT_BROWSER_NAME       = "Chrome";
+
+	public static final String CONFIG_LOG_FILE          = "log4j-alternate.xml";
+	public static final String ERROR_INVALID_LOGIN      = "Please check your username and password. If you still can't log in, contact your Salesforce administrator.";
+}

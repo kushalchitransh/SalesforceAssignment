@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.salesforce.pages;
+
+/**
+ * @author Kushal Shrivastava
+ *
+ */
+public class LoginPage {
+
+}

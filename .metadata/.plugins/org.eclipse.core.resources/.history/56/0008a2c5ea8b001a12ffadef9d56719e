@@ -1,0 +1,90 @@
+package com.salesforce.automation;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.salesforce.automaton.Base;
+import com.salesforce.automaton.Constants;
+import com.salesforce.pages.LandingPage;
+import com.salesforce.pages.LoginPage;
+
+public class TestCase_Login {
+	LoginPage   loginPage;
+	LandingPage landingPage;
+	String      className = TestCase_Login.class.getName();
+
+	@BeforeClass
+	public void InitializePage() {
+		loginPage = new LoginPage();
+		landingPage = new LandingPage();
+		Base.getImplicitWait(20);
+	}
+
+	@BeforeMethod
+	public void beforeMethod() {
+		Base.openUrl(Constants.URL_SALESFORCELOGIN);
+	}
+
+	@Test
+	public void A_InvalidUserName() {
+		loginPage.setTxtUsername("kushalsh");
+		Base.getLogger(className).info("Entered the user name");
+		loginPage.setTxtPassword(Constants.INPUT_PASSWORD);
+		Base.getLogger(className).info("Entered the password");
+		loginPage.clickBtnLogin();
+		Base.getLogger(className).info("Clicked on Login Button");
+		WebDriverWait wait = new WebDriverWait(Base.getDriverInstance(), 20);
+		wait.until(ExpectedConditions.visibilityOf(loginPage
+		        .getLblInvalidLogin()));
+		Base.getLogger(className).info(
+		        "Waiting for the validation message to appear");
+		Assert.assertTrue(
+		        loginPage.getLblInvalidLogintext().contains("Please"),
+		        "The assertion is true as the error appears");
+	}
+
+	@Test
+	public void B_InvalidPassword() {
+		loginPage.setTxtUsername(Constants.INPUT_USERNAME);
+		Base.getLogger(className).info("Entered the user name");
+		loginPage.setTxtPassword("Test");
+		Base.getLogger(className).info("Entered the password");
+		loginPage.clickBtnLogin();
+		Base.getLogger(className).info("Clicked on Login Button");
+		WebDriverWait wait = new WebDriverWait(Base.getDriverInstance(), 20);
+		wait.until(ExpectedConditions.visibilityOf(loginPage
+		        .getLblInvalidLogin()));
+		Base.getLogger(className).info(
+		        "Waiting for the validation message to appear");
+		Assert.assertTrue(
+		        loginPage.getLblInvalidLogintext().contains("Please"),
+		        "The assertion is true as the error appears");
+	}
+
+	@Test
+	public void C_validLogin() {
+		loginPage.setTxtUsername(Constants.INPUT_USERNAME);
+		Base.getLogger(className).info("Entered the user name");
+		loginPage.setTxtPassword(Constants.INPUT_PASSWORD);
+		Base.getLogger(className).info("Entered the password");
+		loginPage.clickBtnLogin();
+		Base.getLogger(className).info("Clicked on Login Button");
+		WebDriverWait wait = new WebDriverWait(Base.getDriverInstance(), 20);
+		wait.until(ExpectedConditions.visibilityOf(landingPage.getLblSetup()));
+		Base.getLogger(className).info("Waiting for the landing page");
+		Assert.assertTrue(
+		        loginPage.getLblInvalidLogintext().contains("Please"),
+		        "The assertion is true as the error appears");
+	}
+
+	@AfterClass
+	public void afterClass() {
+		Base.closeWindow();
+	}
+
+}

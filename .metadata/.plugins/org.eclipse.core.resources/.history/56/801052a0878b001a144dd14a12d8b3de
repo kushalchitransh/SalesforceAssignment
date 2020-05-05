@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package com.salesforce.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+/**
+ * This class defines the page elements of Login page of salesforce.com. This is
+ * created under POM implementation
+ *<p>
+ * Variables appended by txt stands for textbox field type
+ * Variables appended by btn stands for button field type
+ * Variables appended by lbl stands for label or static text field type
+ * </p>
+ * @author Kushal Shrivastava
+ *
+ */
+public class LoginPage {
+
+	@FindBy(id = "username")
+	private WebElement tx_UserName;
+
+	@FindBy(id = "password")
+	private WebElement txtPassword;
+
+	@FindBy(id = "login")
+	private WebElement btnLogin;
+	
+	@FindBy(id ="error")
+	private WebElement lblInvalidLogin;
+
+}

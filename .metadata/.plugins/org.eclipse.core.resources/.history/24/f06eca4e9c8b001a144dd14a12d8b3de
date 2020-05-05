@@ -1,0 +1,46 @@
+package com.salesforce.automaton;
+
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+	Logger logger = Logger.getLogger(App.class.getName());
+    public static void main( String[] args )
+    {
+        WebDriver driver;
+        System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver.exe");
+        driver=new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        
+        driver.get("https://login.salesforce.com/");
+        
+        WebElement textBoxlogin= driver.findElement(By.xpath("//*[@id='username']"));
+        textBoxlogin.clear();
+        textBoxlogin.sendKeys("kushalchitransh@gmail.com");
+        WebElement textBoxPassword= driver.findElement(By.xpath("//*[@id='password']"));
+        textBoxPassword.clear();
+        textBoxPassword.sendKeys("Summer@2015");
+        WebElement buttonLogin=driver.findElement(By.xpath("//*[@id='Login']"));
+       buttonLogin.click();
+       
+       if(!driver.getCurrentUrl().contains("lightning"))
+       {
+    	   WebDriverWait waitforlink= new WebDriverWait(driver,10);
+    	   waitforlink.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@class='switch-to-lightning']"))).click();;
+       }  
+        
+    }
+}

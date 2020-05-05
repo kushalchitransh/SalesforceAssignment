@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package com.salesforce.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.internal.WebElementToJsonConverter;
+import org.openqa.selenium.support.FindBy;
+
+/**
+ * This class defines the page elements of Sales App page of salesforce.com.
+ * This is created under POM implementation
+ * <p>
+ * Variables appended by txt stands for textbox field type
+ * </p>
+ * <p>
+ * Variables appended by btn stands for button field type
+ * </p>
+ * <p>
+ * Variables appended by lbl stands for label or static text field type
+ * </p>
+ * 
+ * @author Kushal Shrivastava
+ *
+ */
+public class SalesAppPage {
+
+	@FindBy (xpath ="//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[text()='Accounts']]]")
+	private WebElement btnAccounts;
+
+	public void clickBtnAccounts() {
+		btnAccounts.click();
+	}
+
+}

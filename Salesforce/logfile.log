@@ -1,0 +1,59 @@
+2020-05-05 13:52:51,972 INFO  [main] (TestCase_A_Login_DevAcc.java:25) - Browser initialized......
+2020-05-05 13:52:55,500 INFO  [main] (TestCase_A_Login_DevAcc.java:33) - Test started -------------- A_InvalidUserName
+2020-05-05 13:52:59,492 INFO  [main] (TestCase_A_Login_DevAcc.java:35) - Entered the user name kushalsh
+2020-05-05 13:53:04,060 INFO  [main] (TestCase_A_Login_DevAcc.java:37) - Entered the password Summer@2015
+2020-05-05 13:53:05,091 INFO  [main] (TestCase_A_Login_DevAcc.java:39) - Clicked on Login Button
+2020-05-05 13:53:05,725 INFO  [main] (TestCase_A_Login_DevAcc.java:41) - Waiting for the validation message to appear
+2020-05-05 13:53:07,739 INFO  [main] (TestCase_A_Login_DevAcc.java:48) - Test started-------------- B_InvalidPassword
+2020-05-05 13:53:08,627 INFO  [main] (TestCase_A_Login_DevAcc.java:50) - Entered the user name kushalchitransh@gmail.com
+2020-05-05 13:53:09,253 INFO  [main] (TestCase_A_Login_DevAcc.java:52) - Entered the password Test
+2020-05-05 13:53:10,049 INFO  [main] (TestCase_A_Login_DevAcc.java:54) - Clicked on Login Button
+2020-05-05 13:53:10,562 INFO  [main] (TestCase_A_Login_DevAcc.java:56) - Waiting for the validation message to appear
+2020-05-05 13:53:10,959 INFO  [main] (TestCase_A_Login_DevAcc.java:63) - Test started -------------- C_ValidLogin
+2020-05-05 13:53:13,191 INFO  [main] (TestCase_A_Login_DevAcc.java:65) - Entered the user name kushalchitransh@gmail.com
+2020-05-05 13:53:14,160 INFO  [main] (TestCase_A_Login_DevAcc.java:67) - Entered the password Summer@2015
+2020-05-05 13:53:28,647 INFO  [main] (TestCase_A_Login_DevAcc.java:69) - Clicked on Login Button
+2020-05-05 13:53:32,214 INFO  [main] (TestCase_A_Login_DevAcc.java:73) - Waiting for the landing page
+2020-05-05 13:53:38,642 INFO  [main] (TestCase_A_Login_DevAcc.java:75) - Landing page appears successfully
+2020-05-05 13:53:52,147 INFO  [main] (TestCase_B_Salesforce_CheckUI.java:32) - Browser initialized......
+2020-05-05 13:54:01,954 INFO  [main] (TestCase_B_Salesforce_CheckUI.java:37) - Logged In Successfully....
+2020-05-05 13:54:04,243 INFO  [main] (TestCase_B_Salesforce_CheckUI.java:51) - Test started --------------D_ValidateLandingPageIsLightening
+2020-05-05 13:54:08,296 INFO  [main] (TestCase_B_Salesforce_CheckUI.java:55) - The page loaded in Salesforce landing page is in LighteningMode.
+2020-05-05 13:54:08,316 INFO  [main] (TestCase_B_Salesforce_CheckUI.java:61) - Test started --------------E_ValidateSwitchToLightening
+2020-05-05 13:54:19,726 INFO  [main] (TestCase_B_Salesforce_CheckUI.java:76) - Clicked on View Profile Icon 
+2020-05-05 13:54:29,418 INFO  [main] (TestCase_B_Salesforce_CheckUI.java:79) - Clicked on 'Switch to Salesforce Classic'
+2020-05-05 13:54:29,528 INFO  [main] (TestCase_B_Salesforce_CheckUI.java:81) - User has moved to Standard Mode of salesforce.
+2020-05-05 13:54:42,035 INFO  [main] (TestCase_B_Salesforce_CheckUI.java:84) - Clicked on 'Switch to lightening experience' link.
+2020-05-05 13:54:44,590 INFO  [main] (TestCase_B_Salesforce_CheckUI.java:95) - User is navigated back to landing page in lightening mode.
+2020-05-05 13:54:49,941 INFO  [main] (TestCase_C_Account_Contact_Case.java:42) - Browser initialized......
+2020-05-05 13:54:57,423 INFO  [main] (TestCase_C_Account_Contact_Case.java:47) - Logged In Successfully....
+2020-05-05 13:55:03,561 INFO  [main] (TestCase_C_Account_Contact_Case.java:60) - Test started --------------F_ValidateAppChange
+2020-05-05 13:55:08,786 INFO  [main] (TestCase_C_Account_Contact_Case.java:64) - Clicked on app launcher Icon
+2020-05-05 13:55:15,960 INFO  [main] (TestCase_C_Account_Contact_Case.java:68) - Entered text in search app text box
+2020-05-05 13:55:18,738 INFO  [main] (TestCase_C_Account_Contact_Case.java:77) - Clicked on the searched text
+2020-05-05 13:55:24,495 INFO  [main] (TestCase_C_Account_Contact_Case.java:79) - The user has navigated to Sales Page.
+2020-05-05 13:55:24,507 INFO  [main] (TestCase_C_Account_Contact_Case.java:86) - Test started --------------G_ValidateAccountCreation
+2020-05-05 13:55:25,734 INFO  [main] (TestCase_C_Account_Contact_Case.java:90) - Clicked on accounts dropdown
+2020-05-05 13:55:29,033 INFO  [main] (TestCase_C_Account_Contact_Case.java:95) - Clicked on New Accounts Button in the dropdown
+2020-05-05 13:55:32,004 INFO  [main] (TestCase_C_Account_Contact_Case.java:100) - New Accounts Screen is visible
+2020-05-05 13:55:36,952 INFO  [main] (TestCase_C_Account_Contact_Case.java:106) - Entered Account Name :Account20200505135238
+2020-05-05 13:55:37,409 INFO  [main] (TestCase_C_Account_Contact_Case.java:111) - Clicked Save Button
+2020-05-05 13:55:41,772 INFO  [main] (TestCase_C_Account_Contact_Case.java:116) - Verified the account is created Successfully and the message as well
+2020-05-05 13:55:41,802 INFO  [main] (TestCase_C_Account_Contact_Case.java:122) - Test started --------------H_ValidateContactCreation
+2020-05-05 13:55:47,546 INFO  [main] (TestCase_C_Account_Contact_Case.java:126) - Clicked on New Contact Button
+2020-05-05 13:55:47,790 INFO  [main] (TestCase_C_Account_Contact_Case.java:130) - New Contact Screen is visible
+2020-05-05 13:55:50,273 INFO  [main] (TestCase_C_Account_Contact_Case.java:136) - Entered New Contact Last Name :Contact20200505135238
+2020-05-05 13:55:50,503 INFO  [main] (TestCase_C_Account_Contact_Case.java:141) - Verified the account name exists against the account field
+2020-05-05 13:55:51,025 INFO  [main] (TestCase_C_Account_Contact_Case.java:146) - Saved New Contact
+2020-05-05 13:55:53,341 INFO  [main] (TestCase_C_Account_Contact_Case.java:151) - Verified the Contact is created Successfully and the message as well
+2020-05-05 13:55:53,441 INFO  [main] (TestCase_C_Account_Contact_Case.java:160) - Verified the contact created successfully by checking the related  tab  contact option 
+2020-05-05 13:55:53,457 INFO  [main] (TestCase_C_Account_Contact_Case.java:167) - Test started --------------I_ValidateCaseCreation
+2020-05-05 13:56:00,502 INFO  [main] (TestCase_C_Account_Contact_Case.java:173) - Clicked on New Case Button
+2020-05-05 13:56:02,041 INFO  [main] (TestCase_C_Account_Contact_Case.java:178) - New Case Screen is visible
+2020-05-05 13:56:05,046 INFO  [main] (TestCase_C_Account_Contact_Case.java:183) - Entered Contact Last Name : Contact20200505135238
+2020-05-05 13:56:08,210 INFO  [main] (TestCase_C_Account_Contact_Case.java:195) - Selected Contact Last Name : Contact20200505135238
+2020-05-05 13:56:09,176 INFO  [main] (TestCase_C_Account_Contact_Case.java:207) - Selected Case Status : New
+2020-05-05 13:56:11,023 INFO  [main] (TestCase_C_Account_Contact_Case.java:212) - Entered Case Subject : CaseSubject20200505135238
+2020-05-05 13:56:12,784 INFO  [main] (TestCase_C_Account_Contact_Case.java:218) - Entered Case Subject : CaseDescription20200505135238
+2020-05-05 13:56:13,170 INFO  [main] (TestCase_C_Account_Contact_Case.java:223) - Clicked Case Save Button
+2020-05-05 13:56:15,542 INFO  [main] (TestCase_C_Account_Contact_Case.java:229) -  Verified the case created successfully by checking the alert and Case iD saved :00001041

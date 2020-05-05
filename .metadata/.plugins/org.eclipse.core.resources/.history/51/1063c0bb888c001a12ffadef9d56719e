@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package com.salesforce.pages;
+
+/**
+ * This class defines the page elements of Sales App page of salesforce.com. This is
+ * created under POM implementation
+ * <p>
+ * Variables appended by txt stands for textbox field type
+ * </p>
+ * <p>
+ * Variables appended by btn stands for button field type
+ * </p>
+ * <p>
+ * Variables appended by lbl stands for label or static text field type
+ * </p>
+ * @author Kushal Shrivastava
+ *
+ */
+public class SalesAppPage {
+	
+	//@FindBy ()
+
+}

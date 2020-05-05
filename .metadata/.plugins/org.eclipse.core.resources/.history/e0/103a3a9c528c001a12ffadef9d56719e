@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+package com.salesforce.automation;
+
+import com.salesforce.pages.LoginPage;
+
+public class TestCase_Salesforce_CheckUI {
+	LoginPage loginpage;
+}

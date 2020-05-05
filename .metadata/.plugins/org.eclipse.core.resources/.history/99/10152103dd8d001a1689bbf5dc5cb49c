@@ -1,0 +1,58 @@
+package com.salesforce.automation;
+
+import org.openqa.selenium.Keys;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+
+import com.salesforce.automaton.Base;
+import com.salesforce.automaton.Constants;
+import com.salesforce.pages.AccountPage;
+import com.salesforce.pages.LandingPage;
+import com.salesforce.pages.LoginPage;
+import com.salesforce.pages.SalesAppPage;
+
+public class TestCase_Account {
+	LoginPage    loginPage;
+	LandingPage  landingPage;
+	SalesAppPage salesAppPage;
+	AccountPage  accountPage;
+	String       className = TestCase_Salesforce_CheckUI.class.getName();
+
+	@BeforeClass
+	public void InitializePage() {
+		loginPage = new LoginPage();
+		landingPage = new LandingPage();
+		salesAppPage = new SalesAppPage();
+		accountPage = new AccountPage();
+		Base.getImplicitWait(20);
+	}
+
+	@BeforeMethod
+	public void initializeURL() {
+		Base.getLogger(className).info("Browser initialized......");
+		Base.openUrl(Constants.URL_SALESFORCELOGIN);
+		loginPage.setTxtUsername(Constants.INPUT_USERNAME);
+		loginPage.setTxtPassword(Constants.INPUT_PASSWORD);
+		loginPage.clickBtnLogin();
+		Base.getLogger(className).info("Logged In Successfully....");
+		Base.performKeyboardActions(Base.getDriverInstance(), Keys.ENTER);
+
+	}
+  @Test
+  public void f() {
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+  }
+
+  @BeforeClass
+  public void beforeClass() {
+  }
+
+  @AfterClass
+  public void afterClass() {
+  }
+
+}

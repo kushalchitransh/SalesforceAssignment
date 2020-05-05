@@ -1,0 +1,41 @@
+package com.salesforce.automaton;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Base {
+
+	private static WebDriver driver;
+	
+	static WebDriver getDriver()
+	{
+		if(driver==null)
+		{
+			System.setProperty("webdriver.chrome.driver","test/reources/chromedriver.exe");
+			  driver = new ChromeDriver();
+			  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			  openUrl("https://adactin.com/HotelApp/");
+		}
+		return driver;
+		}
+	
+	public static void openUrl(String text)
+	{
+	driver.get(text);
+		
+	}
+	public static void closeWindow()
+	{
+		driver.quit();
+	}
+	public static WebDriver getDriverInstance()
+	{
+		return driver;
+	}
+	
+
+}
+
+

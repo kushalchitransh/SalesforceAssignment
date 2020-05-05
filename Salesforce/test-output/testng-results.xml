@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="216410" started-at="2020-05-05T08:22:39Z" finished-at="2020-05-05T08:26:15Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="216410" started-at="2020-05-05T08:22:39Z" finished-at="2020-05-05T08:26:15Z">
+      <class name="com.salesforce.automation.TestCase_A_Login_DevAcc">
+        <test-method status="PASS" signature="InitializePage()[pri:0, instance:com.salesforce.automation.TestCase_A_Login_DevAcc@5c3bd550]" name="InitializePage" is-config="true" duration-ms="16215" started-at="2020-05-05T13:52:39Z" finished-at="2020-05-05T13:52:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializePage -->
+        <test-method status="PASS" signature="A_InvalidUserName()[pri:0, instance:com.salesforce.automation.TestCase_A_Login_DevAcc@5c3bd550]" name="A_InvalidUserName" duration-ms="12299" started-at="2020-05-05T13:52:55Z" finished-at="2020-05-05T13:53:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A_InvalidUserName -->
+        <test-method status="PASS" signature="B_InvalidPassword()[pri:0, instance:com.salesforce.automation.TestCase_A_Login_DevAcc@5c3bd550]" name="B_InvalidPassword" duration-ms="3174" started-at="2020-05-05T13:53:07Z" finished-at="2020-05-05T13:53:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B_InvalidPassword -->
+        <test-method status="PASS" signature="C_ValidLogin()[pri:0, instance:com.salesforce.automation.TestCase_A_Login_DevAcc@5c3bd550]" name="C_ValidLogin" duration-ms="41209" started-at="2020-05-05T13:53:10Z" finished-at="2020-05-05T13:53:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C_ValidLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.salesforce.automation.TestCase_A_Login_DevAcc@5c3bd550]" name="closeBrowser" is-config="true" duration-ms="2" started-at="2020-05-05T13:53:52Z" finished-at="2020-05-05T13:53:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.salesforce.automation.TestCase_A_Login_DevAcc -->
+      <class name="com.salesforce.automation.TestCase_C_Account_Contact_Case">
+        <test-method status="PASS" signature="InitializePage()[pri:0, instance:com.salesforce.automation.TestCase_C_Account_Contact_Case@604ed9f0]" name="InitializePage" is-config="true" duration-ms="13638" started-at="2020-05-05T13:54:49Z" finished-at="2020-05-05T13:55:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializePage -->
+        <test-method status="PASS" signature="initializeURL()[pri:0, instance:com.salesforce.automation.TestCase_C_Account_Contact_Case@604ed9f0]" name="initializeURL" is-config="true" duration-ms="0" started-at="2020-05-05T13:55:03Z" finished-at="2020-05-05T13:55:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeURL -->
+        <test-method status="PASS" signature="F_ValidateAppChange()[pri:0, instance:com.salesforce.automation.TestCase_C_Account_Contact_Case@604ed9f0]" name="F_ValidateAppChange" duration-ms="20970" started-at="2020-05-05T13:55:03Z" finished-at="2020-05-05T13:55:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F_ValidateAppChange -->
+        <test-method status="PASS" signature="G_ValidateAccountCreation()[pri:0, instance:com.salesforce.automation.TestCase_C_Account_Contact_Case@604ed9f0]" name="G_ValidateAccountCreation" duration-ms="17274" started-at="2020-05-05T13:55:24Z" finished-at="2020-05-05T13:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- G_ValidateAccountCreation -->
+        <test-method status="PASS" signature="initializeURL()[pri:0, instance:com.salesforce.automation.TestCase_C_Account_Contact_Case@604ed9f0]" name="initializeURL" is-config="true" duration-ms="0" started-at="2020-05-05T13:55:24Z" finished-at="2020-05-05T13:55:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeURL -->
+        <test-method status="PASS" signature="initializeURL()[pri:0, instance:com.salesforce.automation.TestCase_C_Account_Contact_Case@604ed9f0]" name="initializeURL" is-config="true" duration-ms="0" started-at="2020-05-05T13:55:41Z" finished-at="2020-05-05T13:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeURL -->
+        <test-method status="PASS" signature="H_ValidateContactCreation()[pri:0, instance:com.salesforce.automation.TestCase_C_Account_Contact_Case@604ed9f0]" name="H_ValidateContactCreation" duration-ms="11669" started-at="2020-05-05T13:55:41Z" finished-at="2020-05-05T13:55:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- H_ValidateContactCreation -->
+        <test-method status="PASS" signature="I_ValidateCaseCreation()[pri:0, instance:com.salesforce.automation.TestCase_C_Account_Contact_Case@604ed9f0]" name="I_ValidateCaseCreation" duration-ms="22101" started-at="2020-05-05T13:55:53Z" finished-at="2020-05-05T13:56:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- I_ValidateCaseCreation -->
+        <test-method status="PASS" signature="initializeURL()[pri:0, instance:com.salesforce.automation.TestCase_C_Account_Contact_Case@604ed9f0]" name="initializeURL" is-config="true" duration-ms="0" started-at="2020-05-05T13:55:53Z" finished-at="2020-05-05T13:55:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeURL -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.salesforce.automation.TestCase_C_Account_Contact_Case@604ed9f0]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-05-05T13:56:15Z" finished-at="2020-05-05T13:56:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.salesforce.automation.TestCase_C_Account_Contact_Case -->
+      <class name="com.salesforce.automation.TestCase_B_Salesforce_CheckUI">
+        <test-method status="PASS" signature="InitializePage()[pri:0, instance:com.salesforce.automation.TestCase_B_Salesforce_CheckUI@91161c7]" name="InitializePage" is-config="true" duration-ms="12119" started-at="2020-05-05T13:53:52Z" finished-at="2020-05-05T13:54:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializePage -->
+        <test-method status="PASS" signature="initializeURL()[pri:0, instance:com.salesforce.automation.TestCase_B_Salesforce_CheckUI@91161c7]" name="initializeURL" is-config="true" duration-ms="1" started-at="2020-05-05T13:54:04Z" finished-at="2020-05-05T13:54:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeURL -->
+        <test-method status="PASS" signature="D_ValidateLandingPageIsLightening()[pri:0, instance:com.salesforce.automation.TestCase_B_Salesforce_CheckUI@91161c7]" name="D_ValidateLandingPageIsLightening" duration-ms="4087" started-at="2020-05-05T13:54:04Z" finished-at="2020-05-05T13:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- D_ValidateLandingPageIsLightening -->
+        <test-method status="PASS" signature="initializeURL()[pri:0, instance:com.salesforce.automation.TestCase_B_Salesforce_CheckUI@91161c7]" name="initializeURL" is-config="true" duration-ms="0" started-at="2020-05-05T13:54:08Z" finished-at="2020-05-05T13:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeURL -->
+        <test-method status="PASS" signature="E_ValidateSwitchToLightening()[pri:0, instance:com.salesforce.automation.TestCase_B_Salesforce_CheckUI@91161c7]" name="E_ValidateSwitchToLightening" duration-ms="41575" started-at="2020-05-05T13:54:08Z" finished-at="2020-05-05T13:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E_ValidateSwitchToLightening -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.salesforce.automation.TestCase_B_Salesforce_CheckUI@91161c7]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2020-05-05T13:54:49Z" finished-at="2020-05-05T13:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.salesforce.automation.TestCase_B_Salesforce_CheckUI -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

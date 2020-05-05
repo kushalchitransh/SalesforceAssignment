@@ -1,0 +1,18 @@
+#Initialize Log4j file
+log4j.rootLogger= INFO,FILE,Console
+
+#Define File Appender
+log4j.appender.FILE=org.apache.log4j.FileAppender
+log4j.appender.FILE.File=automatonLogs.out
+log4j.appender.FILE.Append=true
+log4j.appender.FILE.Layout=org.apache.log4j.PatternLayout
+log4j.appender.FILE.Layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss}%-5p %c{1}:%L - %m%n
+log4j.appender.file.MaxFileSize=4MB
+log4j.appender.file.MaxBackupIndex=9
+
+#Define Console appender
+
+log4j.appender.Console=org.apache.log4j.ConsoleAppender
+log4j.appender.Console.Target=System.out
+log4j.appender.Console.layout=org.apache.log4j.PatternLayout
+log4j.appender.Console.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss}%-5p %c{1}:%L - %m%n

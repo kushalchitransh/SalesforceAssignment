@@ -17,7 +17,7 @@ public class Constants
 	public static final String	URL_SALESFORCESTANDARD		= "https://ap17.salesforce.com/home/home.jsp?source=lex";
 	
 	public static final String	INPUT_USERNAME				= "kushalchitransh@gmail.com";
-	public static final String	INPUT_PASSWORD				= "Summer@2015";
+	public static final String	INPUT_PASSWORD				= "********"Please enter the credentials"*****";
 	public static final String	INPUT_BROWSER_NAME			= "Chrome";
 	public static final String	INPUT_SEARCH_TEXT			= "Sales";
 	

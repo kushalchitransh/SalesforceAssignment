@@ -1,5 +1,7 @@
 package com.salesforce.automaton;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -42,13 +44,17 @@ public class Base
 	{
 		if ( driver == null )
 		{
-			if ( browserName.equalsIgnoreCase("Chrome") )
+			if ( browserName.equalsIgnoreCase("chrome") )
 			{
-				System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver.exe");
+				WebDriverManager.chromedriver().setup();
+				// System.setProperty("webdriver.chrome.driver",
+				// "src/resources/chromedriver.exe");
 				driver = new ChromeDriver();
-			} else if ( browserName.equalsIgnoreCase("Firefox") )
+			} else if ( browserName.equalsIgnoreCase("firefox") )
 			{
-				System.setProperty("webdriver.gecko.driver", "src/resources/geckodriver.exe");
+				WebDriverManager.firefoxdriver().setup();
+				// System.setProperty("webdriver.gecko.driver",
+				// "src/resources/geckodriver.exe");
 				driver = new FirefoxDriver();
 			}
 		}

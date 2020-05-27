@@ -3,19 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.salesforce.automation.TestCase_C_Account_Contact_Case"/>
+      <class name="com.salesforce.automation.TestCase_A_Login_DevAcc"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.salesforce.automation.TestCase_C_Account_Contact_Case">
+      <class name="com.salesforce.automation.TestCase_A_Login_DevAcc">
         <methods>
+          <include name="A_InvalidUserName"/>
+          <include name="C_ValidLogin"/>
           <include name="InitializePage"/>
-          <include name="I_ValidateCaseCreation"/>
-          <include name="initializeURL"/>
-          <include name="closeBrowser"/>
+          <include name="B_InvalidPassword"/>
         </methods>
-      </class> <!-- com.salesforce.automation.TestCase_C_Account_Contact_Case -->
+      </class> <!-- com.salesforce.automation.TestCase_A_Login_DevAcc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

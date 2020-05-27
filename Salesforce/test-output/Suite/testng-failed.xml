@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test">
+  <test name="Test(failed)">
     <classes>
-      <class name="com.salesforce.automation.TestCase_A_Login_DevAcc"/>
-      <class name="com.salesforce.automation.TestCase_B_Salesforce_CheckUI"/>
-      <class name="com.salesforce.automation.TestCase_C_Account_Contact_Case"/>
+      <class name="com.salesforce.automation.TestCase_C_Account_Contact_Case">
+        <methods>
+          <include name="H_ValidateContactCreation"/>
+          <include name="G_ValidateAccountCreation"/>
+          <include name="InitializePage"/>
+          <include name="I_ValidateCaseCreation"/>
+          <include name="initializeURL"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.salesforce.automation.TestCase_C_Account_Contact_Case -->
+      <class name="com.salesforce.automation.TestCase_A_Login_DevAcc">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="InitializePage"/>
+        </methods>
+      </class> <!-- com.salesforce.automation.TestCase_A_Login_DevAcc -->
+      <class name="com.salesforce.automation.TestCase_B_Salesforce_CheckUI">
+        <methods>
+          <include name="D_ValidateLandingPageIsLightening"/>
+          <include name="InitializePage"/>
+          <include name="E_ValidateSwitchToLightening"/>
+          <include name="initializeURL"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.salesforce.automation.TestCase_B_Salesforce_CheckUI -->
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

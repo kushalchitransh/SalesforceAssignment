@@ -161,7 +161,7 @@ public class TestCase_C_Account_Contact_Case
 		
 	}
 	
-	@Test ( invocationCount = 1 )
+	@Test
 	public void I_ValidateCaseCreation() throws InterruptedException
 	{
 		Base.getLogger(className).info("Test started --------------I_ValidateCaseCreation");

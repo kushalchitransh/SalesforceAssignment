@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="RegressionSuite" parallel="tests">
+  <test name="RegressionTest">
+    <classes>
+      <class name="com.salesforce.automation.TestCase_A_Login_DevAcc"/>
+      <class name="com.salesforce.automation.TestCase_C_Account_Contact_Case"/>
+      <class name="com.salesforce.automation.TestCase_B_Salesforce_CheckUI"/>
+    </classes>
+  </test> <!-- RegressionTest -->
+</suite> <!-- RegressionSuite -->

@@ -3,8 +3,6 @@
  */
 package com.salesforce.automaton;
 
-import bsh.This;
-
 /**
  * @author Kushal Shrivastava
  * @see This class contains all the static and constants
@@ -18,7 +16,7 @@ public class Constants
 	
 	public static final String	INPUT_USERNAME				= "kushalchitransh@gmail.com";
 	public static final String	INPUT_PASSWORD				= "Summer@2015";
-	public static final String	INPUT_BROWSER_NAME			= "Chrome";
+	public static final String	INPUT_BROWSER_NAME			= "chrome";
 	public static final String	INPUT_SEARCH_TEXT			= "Sales";
 	
 	public static final String	CONFIG_LOG_FILE				= "log4j-alternate.xml";

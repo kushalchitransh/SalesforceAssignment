@@ -202,4 +202,9 @@ public class Base
 	{
 		return type + getDate();
 	}
+	
+	public static void takeScreenShot()
+	{
+		
+	}
 }
